@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Sitzordnung_IT_Klassen
+namespace Projekt_Sitzordnung
 {
     /// <summary>
     /// Interaktionslogik für MainWindow.xaml
@@ -24,6 +24,30 @@ namespace Sitzordnung_IT_Klassen
         {
             InitializeComponent();
         }
-        //test von chris 
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            GenerateRadioButtons(Convert.ToInt32(Text_Anzahl.Text));
+        }
+
+        private void GenerateRadioButtons(int Anzahl)
+        {
+            for (int x = 0; x < Anzahl; x++)
+            {
+
+                for (int i = 0; i < 6; i++)
+                {
+                    RadioButton rb = new RadioButton() { Content = "Radio button " + i, IsChecked = i == 0 };
+                    rb.Checked += (sender, args) =>
+                    {
+                        Console.WriteLine("Pressed " + (sender as RadioButton).Tag);
+                    };
+                    rb.Unchecked += (sender, args) => { /* Do stuff */ };
+                    rb.Tag = i;
+
+                    StackPanel_Raum.Children.Add(rb);
+                }
+            }
+        }
     }
 }
