@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +22,8 @@ namespace Projekt_Sitzordnung
     /// </summary>
     public partial class MainWindow : Window
     {
+        private TextBox txtPath;
+        private OpenFileDialog dlg;
         public MainWindow()
         {
             InitializeComponent();
@@ -46,6 +50,36 @@ namespace Projekt_Sitzordnung
                     rb.Tag = i;
                 }
             }
+        }
+
+        private void Button_import_Click(object sender, RoutedEventArgs e)
+        {
+           dlg = new OpenFileDialog();
+            txtPath = new TextBox();
+           
+
+            //Open the Pop-Up Window to select the file 
+            if (dlg.ShowDialog() == true)
+            {
+                new FileInfo(dlg.FileName);
+                using (Stream s = dlg.OpenFile())
+                {
+                    TextReader reader = new StreamReader(s);
+                    string st = reader.ReadToEnd();
+                    txtPath.Text = dlg.FileName;
+                    Console.WriteLine(txtPath.Text);
+                }
+
+            }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {         
+                System.IO.StreamReader sr = new
+                   System.IO.StreamReader(dlg.FileName);
+            Console.WriteLine("Programmaufruf Anzeigen");
+                MessageBox.Show(sr.ReadToEnd());
+                sr.Close();
         }
     }
 }

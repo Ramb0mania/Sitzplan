@@ -11,12 +11,6 @@ namespace Sitzordnung_IT_Klassen
         //CSV-Datei Anbindung für Schüler.csv
         public List<Schueler> SchuelerListe = new List<Schueler>();
 
-        public static void Main(string[] args)
-        {
-            // Initialisierung von Raum und Standard Anzahl an Tischen (5)
-
-        }
-
         public void leseDatei(string csvPfad)
         {
             if (Directory.Exists(csvPfad))
