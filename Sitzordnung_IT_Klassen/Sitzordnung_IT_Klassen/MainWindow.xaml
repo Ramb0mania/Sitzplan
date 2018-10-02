@@ -9,7 +9,7 @@
     <Grid Margin="0,0,0,-2.5">
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="106" Margin="-1,0,0,0" VerticalAlignment="Top" Width="228"/>
         <Button Name="Button_add" Content="Add Schüler" HorizontalAlignment="Left" Margin="116,10,0,0" VerticalAlignment="Top" Width="89" RenderTransformOrigin="1.722,0.351"/>
-        <TextBox Name="Text_Anzahl" HorizontalAlignment="Left" Height="28" Margin="116,40,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="89"/>
+        <TextBox Name="Text_Anzahl" HorizontalAlignment="Left" Height="28" Margin="116,40,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="89" TextChanged="Text_Anzahl_TextChanged"/>
         <Label Content="Anzahl der Tische" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Height="32" Width="128"/>
         <Button Name="Button_import" Content="Import Schüler" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="89"/>
         <Button Name="Button_content" Content="Generiere Raum" HorizontalAlignment="Left" Margin="10,73,0,0" VerticalAlignment="Top" Width="195" Click="Button_Click" />

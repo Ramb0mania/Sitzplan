@@ -44,8 +44,6 @@ namespace Projekt_Sitzordnung
                     };
                     rb.Unchecked += (sender, args) => { /* Do stuff */ };
                     rb.Tag = i;
-
-                    StackPanel_Raum.Children.Add(rb);
                 }
             }
         }
