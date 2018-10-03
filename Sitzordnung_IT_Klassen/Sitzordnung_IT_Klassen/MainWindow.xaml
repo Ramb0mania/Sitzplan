@@ -91,7 +91,6 @@
             <Button x:Name="Button_add_Copy" Content="Add Schüler" HorizontalAlignment="Right" Margin="0,1,1,0" VerticalAlignment="Top" Width="88" RenderTransformOrigin="1.722,0.351" Click="Button_add_Click" Height="22" Grid.Row="2" Grid.Column="4"/>
             <Button x:Name="Button_edit_Copy"  Content="Edit Schüler" HorizontalAlignment="Right" Margin="0,1,4,0" VerticalAlignment="Top" Width="88" Height="22" Grid.Row="2" Grid.Column="6"/>
             <Button Content="Zeige Liste" HorizontalAlignment="Right" Margin="0,1,1,0" VerticalAlignment="Top" Width="88" Click="Button_edit_Click" Height="22" Grid.Row="4" Grid.Column="2"/>
-            <Button x:Name="Button_content_Copy" Content="Generiere Raum" HorizontalAlignment="Right" Margin="0,0,86,1" VerticalAlignment="Bottom" Width="194" Click="Button_Click" Height="22" Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="5" />
             <Button Content="Verteile Schüler" HorizontalAlignment="Right" Margin="0,0,86,1" Width="194" Click="Verteile_Schueler" Grid.Row="8" Grid.Column="2" Grid.ColumnSpan="5" Height="22" VerticalAlignment="Bottom"/>
             <Button Content="Schließen" Margin="0,1,1,0" Click="oeffneSchließFenster" Grid.Row="4" Grid.Column="4" HorizontalAlignment="Right" Width="88" Height="22" VerticalAlignment="Top"/>
             <StackPanel

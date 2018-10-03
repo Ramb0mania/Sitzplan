@@ -6,7 +6,7 @@
         mc:Ignorable="d"
         Title="SchuelerAnsichtFenster" Height="450" Width="800">
     <Grid Background="#FF515050">
-        <ListView Margin="28,34,205,35" Name="list1" Background="Azure">
+        <ListView Margin="28,34,205,35" Name="list1" Background="Azure" SelectionChanged="list1_SelectionChanged">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Path=schuelerListe.Name}"></GridViewColumn>

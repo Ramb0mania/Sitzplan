@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Sitzordnung_IT_Klassen;
 
 namespace Sitzordnung_IT_Klassen
 {
     class Schueler
     {
-        private string Name         { get; set; }
+        public string Name         { get; set; }
         private string Vorname      { get; set; }
         private string Beruf        { get; set; }
         private string Betrieb      { get; set; }
