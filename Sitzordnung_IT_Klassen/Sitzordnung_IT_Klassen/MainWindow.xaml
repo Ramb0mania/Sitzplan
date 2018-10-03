@@ -5,330 +5,323 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sitzordnung_IT_Klassen"
         mc:Ignorable="d"
-        Title="Sitzplanordnung" Height="569.197" Width="805">
-    <Grid Margin="0,0,0,-20">
+        Title="Sitzplanordnung" Height="957.197" Width="1758.2">
+    <Grid Margin="0,134,0,-20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="78*"/>
+            <RowDefinition Height="77*"/>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="47*"/>
+            <RowDefinition Height="89*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="73*"/>
+            <RowDefinition Height="46*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="90*"/>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="49*"/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="101*"/>
+            <ColumnDefinition Width="77*"/>
+            <ColumnDefinition Width="75*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="75*"/>
+            <ColumnDefinition Width="75*"/>
+            <ColumnDefinition Width="297*"/>
+            <ColumnDefinition Width="77*"/>
+            <ColumnDefinition Width="76*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="75*"/>
+            <ColumnDefinition Width="77*"/>
+            <ColumnDefinition Width="299*"/>
+            <ColumnDefinition Width="75*"/>
+            <ColumnDefinition Width="77*"/>
+            <ColumnDefinition Width="9*"/>
+            <ColumnDefinition Width="75*"/>
+            <ColumnDefinition Width="76*"/>
+            <ColumnDefinition Width="106*"/>
+            <ColumnDefinition Width="4*"/>
         </Grid.ColumnDefinitions>
-
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="129" Margin="-1,0,0,0" VerticalAlignment="Top" Width="228"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="106" Margin="-1,0,0,0" VerticalAlignment="Top" Width="228"/>
-        <Button Name="Button_add" Content="Add Schüler" HorizontalAlignment="Left" Margin="116,10,0,0" VerticalAlignment="Top" Width="89" RenderTransformOrigin="1.722,0.351" Click="Button_add_Click"/>
-        <Button Name="Button_import" Content="Import Schüler" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="89" Click="Button_import_Click"/>
-        <Button Name="Button_content" Content="Generiere Raum" HorizontalAlignment="Left" Margin="10,73,0,0" VerticalAlignment="Top" Width="195" Click="Button_content_Click" />
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="129" Margin="567,0,-3,0" VerticalAlignment="Top" Width="228">
-            <DataGrid/>
-        </Border>
-        <Button Name="Button_edit"  Content="Edit Schüler" HorizontalAlignment="Left" Margin="583,10,0,0" VerticalAlignment="Top" Width="89" Click="Button_edit_Click"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="45,380,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
-            <Border.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="89.917"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Border.RenderTransform>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="95,380,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
-            <Border.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="89.917"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Border.RenderTransform>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="73,455,0,0" VerticalAlignment="Top" Width="94" RenderTransformOrigin="0.5,0.5">
-            <Border.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="180"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Border.RenderTransform>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="45,174,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
-            <Border.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="89.917"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Border.RenderTransform>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="95,174,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
-            <Border.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="89.917"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Border.RenderTransform>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="73,249,0,0" VerticalAlignment="Top" Width="94" RenderTransformOrigin="0.5,0.5">
-            <Border.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="180"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Border.RenderTransform>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="318,204,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
-            <Border.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="89.917"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Border.RenderTransform>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="368,204,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
-            <Border.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="89.917"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Border.RenderTransform>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="346,279,0,0" VerticalAlignment="Top" Width="94" RenderTransformOrigin="0.999,0.31">
-            <Border.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="180"/>
-                    <TranslateTransform X="-93.812" Y="17.1"/>
-                </TransformGroup>
-            </Border.RenderTransform>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="609,379,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
-            <Border.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="89.917"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Border.RenderTransform>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="659,379,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
-            <Border.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="89.917"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Border.RenderTransform>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="637,454,0,0" VerticalAlignment="Top" Width="94" RenderTransformOrigin="0.5,0.5">
-            <Border.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="180"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Border.RenderTransform>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="609,174,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
-            <Border.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="89.917"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Border.RenderTransform>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="659,174,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
-            <Border.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="89.917"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Border.RenderTransform>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="637,249,0,0" VerticalAlignment="Top" Width="94" RenderTransformOrigin="0.5,0.5">
-            <Border.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="180"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Border.RenderTransform>
-        </Border>
-        <Button Content="Zeige Liste" HorizontalAlignment="Left" Margin="677,10,0,0" VerticalAlignment="Top" Width="96" Click="Button_Click_1"/>
-        <Button Content="Verteile Schüler" HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top" Width="195"/>
         <!-- Bedingung: Raum muss generiert sein und eine Datei muss angebunden sein -->
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="66,296,681,218"/>
+            Drop="Panel_Drop" Margin="1,5,9,0" Width="75" Height="45" Grid.Column="3" Grid.ColumnSpan="2" Grid.Row="5"/>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="128,296,619,218"/>
+            Drop="Panel_Drop" Margin="0,5,0,0" Width="75" Height="45" Grid.Column="5" Grid.Row="5"/>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="338,326,409,188"/>
+            Drop="Panel_Drop" Margin="1,31,1,1" Width="75" Height="45" Grid.Column="2" Grid.Row="1"/>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="402,326,345,188"/>
+            Drop="Panel_Drop" Margin="1" Width="75" Height="45" Grid.Column="2" Grid.Row="3"/>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="628,296,118,218"/>
-        <StackPanel
-            Background="DarkGray"
-            AllowDrop="True"
-            DragOver= "Panel_DragOver"
-            Drop="Panel_Drop" Margin="694,296,53,218"/>
+            Drop="Panel_Drop" Margin="1,31,296,1" Width="75" Height="45" RenderTransformOrigin="0.741,-1.815" Grid.Column="6" Grid.ColumnSpan="2" Grid.Row="1"/>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="64,490,683,24"/>
+            Drop="Panel_Drop" Margin="1,1,296,1" Height="45" Grid.Column="6" Grid.ColumnSpan="2" Grid.Row="3"/>
+        <Grid HorizontalAlignment="Left" Height="129" Margin="-3,-134,0,0" VerticalAlignment="Top" Width="1750" Grid.ColumnSpan="21">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="271*"/>
+                <ColumnDefinition Width="604*"/>
+            </Grid.ColumnDefinitions>
+            <Border BorderBrush="Black" BorderThickness="3" HorizontalAlignment="Left" Height="129" VerticalAlignment="Top" Width="298"/>
+            <Button x:Name="Button_import_Copy" Content="Import Schüler" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="89" Click="Button_import_Click" Height="22"/>
+            <Button x:Name="Button_add_Copy" Content="Add Schüler" HorizontalAlignment="Left" Margin="104,10,0,0" VerticalAlignment="Top" Width="89" RenderTransformOrigin="1.722,0.351" Click="Button_add_Click" Height="22"/>
+            <Button x:Name="Button_edit_Copy"  Content="Edit Schüler" HorizontalAlignment="Left" Margin="198,10,0,0" VerticalAlignment="Top" Width="89" Height="22"/>
+            <Button Content="Zeige Liste" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Width="89" Click="Button_Click_1" Height="22"/>
+            <Button x:Name="Button_content_Copy" Content="Generiere Raum" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" Width="195" Click="Button_Click" Height="22" />
+            <Button Content="Verteile Schüler" HorizontalAlignment="Left" Margin="10,96,0,0" VerticalAlignment="Top" Width="195" Height="22"/>
+            <Button Content="Schließen" RenderTransformOrigin="-0.77,2.038" Margin="104,35,349,70" Click="oeffneSchließFenster" Width="89" Height="24"/>
+            <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"  
+            Width="45" Height="45"
+            Drop="Panel_Drop" Margin="328,36,169,48">
+                <local:SchuelerGUI Margin="2" />
+            </StackPanel>
+        </Grid>
+        <Image Margin="67,14,65,0" Source="Tisch Oben.jpg" Stretch="Fill" Width="180" Height="75" Grid.Column="2" Grid.ColumnSpan="5" Grid.Row="4" />
+        <Image Margin="27,55,30,39" Source="Tisch Oben.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Width="180" Height="75" Grid.Column="2" Grid.ColumnSpan="4" Grid.Row="1" Grid.RowSpan="3" >
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90.136"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Margin="30,55,25,39" Source="Tisch Oben.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Width="180" Height="75" Grid.Column="3" Grid.ColumnSpan="4" Grid.Row="1" Grid.RowSpan="3" >
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90.136"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="128,490,619,24"/>
+            Drop="Panel_Drop" Margin="2,5,0,0" Width="75" Height="45" Grid.Column="15" Grid.Row="5"/>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="628,490,119,24"/>
+            Drop="Panel_Drop" Margin="0,5,0,0" Width="75" Height="45" Grid.Column="17" Grid.Row="5"/>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="694,490,53,24"/>
+            Drop="Panel_Drop" Margin="0,31,0,1" Width="75" Height="45" Grid.Column="14" Grid.Row="1"/>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="24,150,723,364"/>
+            Drop="Panel_Drop" Margin="0,1" Width="75" Height="45" Grid.Column="14" Grid.Row="3"/>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="24,207,723,307"/>
+            Drop="Panel_Drop" Margin="1,31,0,1" Width="75" Height="45" RenderTransformOrigin="0.741,-1.815" Grid.Column="18" Grid.Row="1"/>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="24,356,723,158"/>
+            Drop="Panel_Drop" Margin="1,1,0,1" Height="45" Grid.Column="18" Grid.Row="3"/>
+        <Image Margin="66,14,66,0" Source="Tisch Oben.jpg" Stretch="Fill" Width="180" Height="75" Grid.Column="14" Grid.ColumnSpan="5" Grid.Row="4" />
+        <Image Margin="26,55,30,39" Source="Tisch Oben.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Width="180" Height="75" Grid.Column="14" Grid.ColumnSpan="4" Grid.Row="1" Grid.RowSpan="3" >
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90.136"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Margin="31,55,26,39" Source="Tisch Oben.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Width="180" Height="75" Grid.Column="15" Grid.ColumnSpan="4" Grid.Row="1" Grid.RowSpan="3" >
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90.136"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="24,416,723,98"/>
+            Drop="Panel_Drop" Margin="2,5,9,0" Width="75" Height="45" Grid.Column="9" Grid.ColumnSpan="2" Grid.Row="5"/>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="297,180,450,334"/>
+            Drop="Panel_Drop" Margin="0,5,0,0" Width="75" Height="45" Grid.Column="11" Grid.Row="5"/>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="297,238,450,276"/>
+            Drop="Panel_Drop" Margin="2,31,0,1" Width="75" Height="45" Grid.Column="8" Grid.Row="1"/>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="588,150,159,364"/>
+            Drop="Panel_Drop" Margin="2,1,0,1" Width="75" Height="45" Grid.Column="8" Grid.Row="3"/>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="588,207,159,307"/>
+            Drop="Panel_Drop" Margin="1,31,1,1" Width="75" Height="45" RenderTransformOrigin="0.741,-1.815" Grid.Column="12" Grid.Row="1"/>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="588,356,159,158"/>
+            Drop="Panel_Drop" Margin="1" Height="45" Grid.Column="12" Grid.Row="3"/>
+        <Image Margin="68,14,67,0" Source="Tisch Oben.jpg" Stretch="Fill" Width="180" Height="75" Grid.Column="8" Grid.ColumnSpan="5" Grid.Row="4" />
+        <Image Margin="28,55,30,39" Source="Tisch Oben.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Width="180" Height="75" Grid.Column="8" Grid.ColumnSpan="4" Grid.Row="1" Grid.RowSpan="3" >
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90.136"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Margin="31,55,27,39" Source="Tisch Oben.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Width="180" Height="75" Grid.Column="9" Grid.ColumnSpan="4" Grid.Row="1" Grid.RowSpan="3" >
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90.136"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="588,416,159,98"/>
+            Drop="Panel_Drop" Margin="1,2,9,2" Width="75" Height="45" Grid.Column="3" Grid.ColumnSpan="2" Grid.Row="11"/>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="171,150,576,364"/>
+            Drop="Panel_Drop" Margin="0,2" Width="75" Height="45" Grid.Column="5" Grid.Row="11"/>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="170,207,576,307"/>
+            Drop="Panel_Drop" Margin="1,29,1,45" Width="75" Height="45" Grid.Column="2" Grid.Row="7" Grid.RowSpan="2"/>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="171,356,576,158"/>
+            Drop="Panel_Drop" Margin="1,2,1,3" Width="75" Height="45" Grid.Column="2" Grid.Row="9"/>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="171,416,576,98"/>
+            Drop="Panel_Drop" Margin="1,29,296,45" Width="75" Height="45" RenderTransformOrigin="0.741,-1.815" Grid.Column="6" Grid.ColumnSpan="2" Grid.Row="7" Grid.RowSpan="2"/>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="444,180,303,334"/>
+            Drop="Panel_Drop" Margin="1,2,296,3" Height="45" Grid.Column="6" Grid.ColumnSpan="2" Grid.Row="9"/>
+        <Image Margin="67,12,65,3" Source="Tisch Oben.jpg" Stretch="Fill" Width="180" Height="75" Grid.Column="2" Grid.ColumnSpan="5" Grid.Row="10" />
+        <Image Margin="27,53,30,41" Source="Tisch Oben.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Width="180" Height="75" Grid.Column="2" Grid.ColumnSpan="4" Grid.Row="7" Grid.RowSpan="3" >
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90.136"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Margin="30,53,25,41" Source="Tisch Oben.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Width="180" Height="75" Grid.Column="3" Grid.ColumnSpan="4" Grid.Row="7" Grid.RowSpan="3" >
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90.136"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="444,238,303,276"/>
+            Drop="Panel_Drop" Margin="2,88,0,6" Width="75" Height="45" Grid.Column="15" Grid.Row="10" Grid.RowSpan="2"/>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="734,150,13,364"/>
+            Drop="Panel_Drop" Margin="0,88,0,6" Width="75" Height="45" Grid.Column="17" Grid.Row="10" Grid.RowSpan="2"/>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="734,207,13,307"/>
+            Drop="Panel_Drop" Margin="0,25,0,3" Width="75" Height="45" Grid.Column="14" Grid.Row="7"/>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="734,356,13,158"/>
+            Drop="Panel_Drop" Margin="0,44,0,7" Width="75" Height="45" Grid.Column="14" Grid.Row="8" Grid.RowSpan="2"/>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="734,416,13,98"/>
+            Drop="Panel_Drop" Margin="1,25,0,3" Width="75" Height="45" RenderTransformOrigin="0.741,-1.815" Grid.Column="18" Grid.Row="7"/>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="241,84,506,430">
-            <local:SchuelerGUI Margin="2" />
-        </StackPanel>
+            Drop="Panel_Drop" Margin="1,44,0,7" Height="45" Grid.Column="18" Grid.Row="8" Grid.RowSpan="2"/>
+        <Image Margin="66,8,66,7" Source="Tisch Oben.jpg" Stretch="Fill" Width="180" Height="75" Grid.Column="14" Grid.ColumnSpan="5" Grid.Row="10" />
+        <Image Margin="26,49,30,45" Source="Tisch Oben.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Width="180" Height="75" Grid.Column="14" Grid.ColumnSpan="4" Grid.Row="7" Grid.RowSpan="3" >
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90.136"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Margin="31,49,26,45" Source="Tisch Oben.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Width="180" Height="75" Grid.Column="15" Grid.ColumnSpan="4" Grid.Row="7" Grid.RowSpan="3" >
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90.136"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
     </Grid>
 </Window>

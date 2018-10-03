@@ -191,5 +191,10 @@ namespace Sitzordnung_IT_Klassen
             ListeFenster neueAnsicht = new ListeFenster();
             neueAnsicht.Show();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
