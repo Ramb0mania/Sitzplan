@@ -25,15 +25,12 @@ namespace Sitzordnung_IT_Klassen
     {
         private TextBox txtPath;
         private OpenFileDialog dlg;
-        private Funktion func;
 
         public MainWindow()
         {
             InitializeComponent();
         }
-
         
-
         private void GenerateRadioButtons(int Anzahl)
         {
             for (int x = 0; x < Anzahl; x++)
@@ -172,6 +169,7 @@ namespace Sitzordnung_IT_Klassen
 
         }
 
+
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             List<int> besetztePlaetze = new List<int>();
@@ -179,12 +177,13 @@ namespace Sitzordnung_IT_Klassen
 
             besetztePlaetze.Clear();
 
-            foreach (Schueler schuelerListe in schuelerListe)
+           /* foreach (Schueler schueler in schuelerListe)
             {
 
             }
-
+            */
 
         }
+
     }
 }
