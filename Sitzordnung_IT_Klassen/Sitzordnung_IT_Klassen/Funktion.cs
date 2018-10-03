@@ -10,7 +10,6 @@ namespace Sitzordnung_IT_Klassen
     {
         //CSV-Datei Anbindung für Schüler.csv
         
-
         public void leseDatei(string csvPfad)
         {
             String wert;
