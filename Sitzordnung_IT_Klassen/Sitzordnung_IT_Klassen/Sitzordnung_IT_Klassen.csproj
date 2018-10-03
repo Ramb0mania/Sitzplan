@@ -60,6 +60,9 @@
       <DependentUpon>SchließenFenster.xaml</DependentUpon>
     </Compile>
     <Compile Include="Schueler.cs" />
+    <Compile Include="SchuelerGUI.xaml.cs">
+      <DependentUpon>SchuelerGUI.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Tisch.cs" />
     <Compile Include="AddSchueler.xaml.cs">
       <DependentUpon>AddSchueler.xaml</DependentUpon>
@@ -82,6 +85,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SchließenFenster.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SchuelerGUI.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
