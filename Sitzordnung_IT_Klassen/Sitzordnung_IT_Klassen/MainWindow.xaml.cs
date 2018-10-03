@@ -15,7 +15,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Windows.Forms;
 
 namespace Sitzordnung_IT_Klassen
 {
@@ -188,7 +187,7 @@ namespace Sitzordnung_IT_Klassen
 
         private void Button_edit_Click(object sender, RoutedEventArgs e)
         {
-            ListeFenster neueAnsicht = new ListeFenster();
+            SchuelerAnsichtFenster neueAnsicht = new SchuelerAnsichtFenster();
             neueAnsicht.Show();
         }
 
