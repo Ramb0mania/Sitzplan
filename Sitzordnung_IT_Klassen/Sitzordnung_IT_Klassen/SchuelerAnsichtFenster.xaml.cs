@@ -55,12 +55,12 @@ namespace Sitzordnung_IT_Klassen
                     Raum.schuelerListe.Add(schueler);
                 }
                 schuelerListe.ForEach(Console.WriteLine);
-                fuelleListView();
+                FuelleListView();
                 return Raum.schuelerListe;
             }
         }
        
-        private void fuelleListView()
+        private void FuelleListView()
         {
             for (int i = 0; i <= Raum.schuelerListe.Count -1; i++)
             {
