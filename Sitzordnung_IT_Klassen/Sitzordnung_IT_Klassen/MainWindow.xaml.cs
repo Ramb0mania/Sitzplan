@@ -189,9 +189,6 @@ namespace Sitzordnung_IT_Klassen
                 besetztePlaetze.Add(platz);
                 
             }
-            */
-
-
         }
 
         public static int RandomNumber(int min, int max)
