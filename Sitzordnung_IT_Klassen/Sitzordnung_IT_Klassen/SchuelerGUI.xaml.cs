@@ -15,9 +15,9 @@ using System.Windows.Shapes;
 
 namespace Sitzordnung_IT_Klassen
 {
-    /// <summary>
+    ///
     /// Interaktionslogik für SchuelerGUI.xaml
-    /// </summary>
+    ///
     public partial class SchuelerGUI : UserControl
     {
         private Brush _previousFill = null;
@@ -38,15 +38,16 @@ namespace Sitzordnung_IT_Klassen
         protected override void OnMouseMove(MouseEventArgs e)
         {
             base.OnMouseMove(e);
+            // Wenn die Linke Maustaste während einer Mausbewegung gedrückt wird
             if (e.LeftButton == MouseButtonState.Pressed)
             {
-                // Package the data.
+                // Daten verpacken.
                 DataObject data = new DataObject();
                 data.SetData(DataFormats.StringFormat, schuelerUI.Fill.ToString());
                 data.SetData("Double", schuelerUI.Height);
                 data.SetData("Object", this);
 
-                // Inititate the drag-and-drop operation.
+                // Drag & drop Operation initiieren.
                 DragDrop.DoDragDrop(this, data, DragDropEffects.Copy | DragDropEffects.Move);
             }
         }
@@ -54,8 +55,7 @@ namespace Sitzordnung_IT_Klassen
         protected override void OnGiveFeedback(GiveFeedbackEventArgs e)
         {
             base.OnGiveFeedback(e);
-            // These Effects values are set in the drop target's
-            // DragOver event handler.
+            // Diese Werte werden im Event-Handler des Drop-Ziels gesetzt.
             if (e.Effects.HasFlag(DragDropEffects.Copy))
             {
                 Mouse.SetCursor(Cursors.Cross);
@@ -75,29 +75,29 @@ namespace Sitzordnung_IT_Klassen
         {
             base.OnDrop(e);
 
-            // If the DataObject contains string data, extract it.
+            // Wenn ein Benutzersteuerungselement String-Daten beinhaltet, ziehe diese raus.
             if (e.Data.GetDataPresent(DataFormats.StringFormat))
             {
                 string dataString = (string)e.Data.GetData(DataFormats.StringFormat);
 
-                // If the string can be converted into a Brush, 
-                // convert it and apply it to the ellipse.
+                // Sollte der String in einen Pinsel konvertiert werden können, 
+                // konvertiere ihn und wende ihn auf dem Objekt an.
                 BrushConverter converter = new BrushConverter();
                 if (converter.IsValid(dataString))
                 {
                     Brush newFill = (Brush)converter.ConvertFromString(dataString);
                     schuelerUI.Fill = newFill;
 
-                    // Set Effects to notify the drag source what effect
-                    // the drag-and-drop operation had.
-                    // (Copy if CTRL is pressed; otherwise, move.)
+                    // Sag der Drag & Drop source Bescheid welchen Effekt
+                    // die Drag & Drop operation hatte.
+                    // (Kopiere wenn Strg gedrückt wird; ansonsten, bewege.)
                     if (e.KeyStates.HasFlag(DragDropKeyStates.ControlKey))
                     {
-                        e.Effects = DragDropEffects.Copy;
+                        e.Effects = DragDropEffects.Move;
                     }
                     else
                     {
-                        e.Effects = DragDropEffects.Move;
+                        e.Effects = DragDropEffects.Copy;
                     }
                 }
             }
@@ -109,12 +109,12 @@ namespace Sitzordnung_IT_Klassen
             base.OnDragOver(e);
             e.Effects = DragDropEffects.None;
 
-            // If the DataObject contains string data, extract it.
+            // Wenn ein Benutzersteuerungselement String-Daten beinhaltet, ziehe diese raus.
             if (e.Data.GetDataPresent(DataFormats.StringFormat))
             {
                 string dataString = (string)e.Data.GetData(DataFormats.StringFormat);
 
-                // If the string can be converted into a Brush, allow copying or moving.
+                // Sollte der String in einen Pinsel konvertiert werden können, erlaube kopieren oder bewegen.
                 BrushConverter converter = new BrushConverter();
                 if (converter.IsValid(dataString))
                 {
@@ -124,11 +124,11 @@ namespace Sitzordnung_IT_Klassen
                     // (Copy if CTRL is pressed; otherwise, move.)
                     if (e.KeyStates.HasFlag(DragDropKeyStates.ControlKey))
                     {
-                        e.Effects = DragDropEffects.Copy;
+                        e.Effects = DragDropEffects.Move;
                     }
                     else
                     {
-                        e.Effects = DragDropEffects.Move;
+                        e.Effects = DragDropEffects.Copy;
                     }
                 }
             }
@@ -138,15 +138,15 @@ namespace Sitzordnung_IT_Klassen
         protected override void OnDragEnter(DragEventArgs e)
         {
             base.OnDragEnter(e);
-            // Save the current Fill brush so that you can revert back to this value in DragLeave.
+            // Speichere die aktuelle Füllfarbe des Pinsels sodass in DragLeave wieder drauf zugreifen kann.
             _previousFill = schuelerUI.Fill;
 
-            // If the DataObject contains string data, extract it.
+            // // Wenn ein Benutzersteuerungselement String-Daten beinhaltet, ziehe diese raus.
             if (e.Data.GetDataPresent(DataFormats.StringFormat))
             {
                 string dataString = (string)e.Data.GetData(DataFormats.StringFormat);
 
-                // If the string can be converted into a Brush, convert it.
+                // Sollte der String in einen Pinsel konvertiert werden können, konvertiere.
                 BrushConverter converter = new BrushConverter();
                 if (converter.IsValid(dataString))
                 {

@@ -26,6 +26,7 @@ namespace Sitzordnung_IT_Klassen
         private TextBox txtPath;
         private OpenFileDialog dlg;
         private Funktion func;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -146,6 +147,11 @@ namespace Sitzordnung_IT_Klassen
                     }
                 }
             }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
