@@ -173,9 +173,9 @@ namespace Sitzordnung_IT_Klassen
 
                 switch (platz)
                 {
-                    case 1:
+                   /* case 1:
                         Platz1.Text = Schueler
-                        Break;
+                        Break; */
                 }
             }
 
