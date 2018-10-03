@@ -12,14 +12,14 @@
         </Grid.ColumnDefinitions>
 
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="129" Margin="-1,0,0,0" VerticalAlignment="Top" Width="228"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="106" Margin="-1,0,0,0" VerticalAlignment="Top" Width="228"/>
         <Button Name="Button_add" Content="Add Schüler" HorizontalAlignment="Left" Margin="116,10,0,0" VerticalAlignment="Top" Width="89" RenderTransformOrigin="1.722,0.351" Click="Button_add_Click"/>
-        <TextBox Name="Text_Anzahl"  HorizontalAlignment="Left" Height="28" Margin="116,40,0,0" TextWrapping="Wrap" Text="Anzahl Schüler" VerticalAlignment="Top" Width="89"/>
-        <Label Content="Anzahl der Tische" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Height="32" Width="128"/>
         <Button Name="Button_import" Content="Import Schüler" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="89" Click="Button_import_Click"/>
         <Button Name="Button_content" Content="Generiere Raum" HorizontalAlignment="Left" Margin="10,73,0,0" VerticalAlignment="Top" Width="195" Click="Button_Click" />
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="129" Margin="567,0,-3,0" VerticalAlignment="Top" Width="228">
             <Button Content="Schließen" RenderTransformOrigin="-0.77,2.038" Margin="109,35,21,68" Click="oeffneSchließFenster"/>
         </Border>
+        <Button Content="Schließen" RenderTransformOrigin="-0.77,2.038" Margin="583,42,120,459.5" Click="Button_Click_2"/>
         <Button Name="Button_edit"  Content="Edit Schüler" HorizontalAlignment="Left" Margin="583,10,0,0" VerticalAlignment="Top" Width="89"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="45,380,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
             <Border.RenderTransform>
