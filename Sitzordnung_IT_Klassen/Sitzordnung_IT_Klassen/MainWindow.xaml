@@ -87,14 +87,15 @@
             <Button x:Name="Button_edit_Copy"  Content="Edit Schüler" HorizontalAlignment="Left" Margin="198,10,0,0" VerticalAlignment="Top" Width="89" Height="22"/>
             <Button Content="Zeige Liste" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Width="89" Click="Button_edit_Click" Height="22"/>
             <Button x:Name="Button_content_Copy" Content="Generiere Raum" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" Width="195" Click="Button_Click" Height="22" />
-            <Button Content="Verteile Schüler" HorizontalAlignment="Left" Margin="10,96,0,0" VerticalAlignment="Top" Width="195" Height="22"/>
+            <Button Content="Verteile Schüler" HorizontalAlignment="Left" Margin="10,96,0,0" VerticalAlignment="Top" Width="195" Height="22" Click="Button_Click_2"/>
             <Button Content="Schließen" RenderTransformOrigin="-0.77,2.038" Margin="104,35,349,70" Click="oeffneSchließFenster" Width="89" Height="24"/>
             <StackPanel
-            Background="DarkGray"
-            AllowDrop="True"
-            DragOver="Panel_DragOver"  
-            Width="45" Height="45"
-            Drop="Panel_Drop" Margin="328,36,169,48">
+                Name="StackVorlage"
+                Background="DarkGray"
+                AllowDrop="True"
+                DragOver="Panel_DragOver"  
+                Width="45" Height="45"
+                Drop="Panel_Drop" Margin="328,36,169,48">
                 <local:SchuelerGUI Margin="2" />
             </StackPanel>
         </Grid>
@@ -323,5 +324,15 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" Margin="0,4,0,0" Width="75" Height="45" Grid.Column="11" Grid.Row="11"/>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" Margin="2,4,9,0" Width="75" Height="45" Grid.Column="9" Grid.Row="11" Grid.ColumnSpan="2"/>
     </Grid>
 </Window>

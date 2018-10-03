@@ -26,6 +26,7 @@ namespace Sitzordnung_IT_Klassen
         private TextBox txtPath;
         private OpenFileDialog dlg;
         private Funktion func;
+        private List<Schueler> schuelerListe = new List<Schueler>();
 
         public MainWindow()
         {
@@ -169,6 +170,17 @@ namespace Sitzordnung_IT_Klassen
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            List<int> besetztePlaetze = new List<int>();
+            int maxPlaetze = 32;
+
+            besetztePlaetze.Clear();
+
+
 
         }
     }
