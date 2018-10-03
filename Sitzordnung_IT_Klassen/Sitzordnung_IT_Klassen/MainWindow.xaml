@@ -59,7 +59,7 @@
             AllowDrop="True"
             DragOver="Panel_DragOver"
             Drop="Panel_Drop" Margin="0,2,6,0" RenderTransformOrigin="0.741,-1.815" Grid.Column="7" Grid.Row="1" HorizontalAlignment="Right" Width="205" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3">
-            <TextBox Width="Auto" Height="66"  Margin="2" Text="blue" FontSize="20"/>
+            <TextBox Name="Platz5" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
         </StackPanel>
         <Grid Height="164" Margin="0,-169,12,77" VerticalAlignment="Bottom" Grid.ColumnSpan="27" Grid.Column="1">
             <Grid.RowDefinitions>
@@ -209,158 +209,218 @@
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="20,2,0,0" RenderTransformOrigin="0.741,-1.815" Grid.Column="11" Grid.Row="1" HorizontalAlignment="Left" Width="205" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3"/>
-        <StackPanel
-            Background="DarkGray"
-            AllowDrop="True"
-            DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="0,15,6,0" RenderTransformOrigin="0.741,-1.815" Grid.Column="7" Grid.Row="2" HorizontalAlignment="Right" Width="205" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
-        <StackPanel
-            Background="DarkGray"
-            AllowDrop="True"
-            DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="0,2,0,0" RenderTransformOrigin="0.741,-1.815" Grid.Row="1" HorizontalAlignment="Left" Width="179" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3" Grid.Column="1">
-            <TextBox Width="Auto" Height="66"  Margin="2" Text="green" FontSize="20"/>
+            Drop="Panel_Drop" Margin="20,2,0,0" RenderTransformOrigin="0.741,-1.815" Grid.Column="11" Grid.Row="1" HorizontalAlignment="Left" Width="205" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3">
+            <TextBox Name="Platz16" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
         </StackPanel>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="0,15,0,0" RenderTransformOrigin="0.741,-1.815" Grid.Row="2" HorizontalAlignment="Left" Width="179" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3" Grid.Column="1" Grid.RowSpan="2"/>
+            Drop="Panel_Drop" Margin="0,15,6,0" RenderTransformOrigin="0.741,-1.815" Grid.Column="7" Grid.Row="2" HorizontalAlignment="Right" Width="205" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3" Grid.RowSpan="2">
+            <TextBox Name="Platz6" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="50,0,0,39" RenderTransformOrigin="0.741,-1.815" Grid.Column="1" Grid.Row="5" HorizontalAlignment="Left" Width="205" Height="70" VerticalAlignment="Bottom" Grid.ColumnSpan="4" Grid.RowSpan="2"/>
+            Drop="Panel_Drop" Margin="0,2,0,0" RenderTransformOrigin="0.741,-1.815" Grid.Row="1" HorizontalAlignment="Left" Width="179" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3" Grid.Column="1">
+            <TextBox Name="Platz4" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="0,0,85,39" RenderTransformOrigin="0.741,-1.815" Grid.Column="6" Grid.Row="5" HorizontalAlignment="Right" Width="205" Height="70" VerticalAlignment="Bottom" Grid.ColumnSpan="4" Grid.RowSpan="2"/>
+            Drop="Panel_Drop" Margin="0,15,0,0" RenderTransformOrigin="0.741,-1.815" Grid.Row="2" HorizontalAlignment="Left" Width="179" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3" Grid.Column="1" Grid.RowSpan="2">
+            <TextBox Name="Platz3" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="1,62,0,0" RenderTransformOrigin="0.741,-1.815" Grid.Row="6" HorizontalAlignment="Left" Width="179" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="4" Grid.RowSpan="2"/>
+            Drop="Panel_Drop" Margin="50,0,0,39" RenderTransformOrigin="0.741,-1.815" Grid.Column="1" Grid.Row="5" HorizontalAlignment="Left" Width="205" Height="70" VerticalAlignment="Bottom" Grid.ColumnSpan="4" Grid.RowSpan="2">
+            <TextBox Name="Platz2" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="0,19,0,0" RenderTransformOrigin="0.741,-1.815" Grid.Row="8" HorizontalAlignment="Left" Width="179" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3" Grid.RowSpan="2" Grid.Column="1"/>
+            Drop="Panel_Drop" Margin="0,0,85,39" RenderTransformOrigin="0.741,-1.815" Grid.Column="6" Grid.Row="5" HorizontalAlignment="Right" Width="205" Height="70" VerticalAlignment="Bottom" Grid.ColumnSpan="4" Grid.RowSpan="2">
+            <TextBox Name="Platz1" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="0,62,6,0" RenderTransformOrigin="0.741,-1.815" Grid.Column="7" Grid.Row="6" HorizontalAlignment="Right" Width="205" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
+            Drop="Panel_Drop" Margin="1,62,0,0" RenderTransformOrigin="0.741,-1.815" Grid.Row="6" HorizontalAlignment="Left" Width="179" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="4" Grid.RowSpan="2">
+            <TextBox Name="Platz10" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="0,18,4,0" RenderTransformOrigin="0.741,-1.815" Grid.Column="7" Grid.Row="8" HorizontalAlignment="Right" Width="205" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
+            Drop="Panel_Drop" Margin="0,19,0,0" RenderTransformOrigin="0.741,-1.815" Grid.Row="8" HorizontalAlignment="Left" Width="179" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3" Grid.RowSpan="2" Grid.Column="1">
+            <TextBox Name="Platz9" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="0,0,84,21" RenderTransformOrigin="0.741,-1.815" Grid.Column="6" Grid.Row="11" HorizontalAlignment="Right" Width="205" Height="70" VerticalAlignment="Bottom" Grid.ColumnSpan="4" Grid.RowSpan="2"/>
+            Drop="Panel_Drop" Margin="0,62,6,0" RenderTransformOrigin="0.741,-1.815" Grid.Column="7" Grid.Row="6" HorizontalAlignment="Right" Width="205" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3" Grid.RowSpan="2">
+            <TextBox Name="Platz11" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="50,0,0,21" RenderTransformOrigin="0.741,-1.815" Grid.Column="1" Grid.Row="11" HorizontalAlignment="Left" Width="205" Height="70" VerticalAlignment="Bottom" Grid.ColumnSpan="4" Grid.RowSpan="2"/>
+            Drop="Panel_Drop" Margin="0,18,4,0" RenderTransformOrigin="0.741,-1.815" Grid.Column="7" Grid.Row="8" HorizontalAlignment="Right" Width="205" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3" Grid.RowSpan="2">
+            <TextBox Name="Platz12" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="90,0,0,21" RenderTransformOrigin="0.741,-1.815" Grid.Column="11" Grid.Row="11" HorizontalAlignment="Left" Width="205" Height="70" VerticalAlignment="Bottom" Grid.ColumnSpan="4" Grid.RowSpan="2"/>
+            Drop="Panel_Drop" Margin="0,0,84,21" RenderTransformOrigin="0.741,-1.815" Grid.Column="6" Grid.Row="11" HorizontalAlignment="Right" Width="205" Height="70" VerticalAlignment="Bottom" Grid.ColumnSpan="4" Grid.RowSpan="2">
+            <TextBox Name="Platz7" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="0,0,241,21" RenderTransformOrigin="0.741,-1.815" Grid.Column="16" Grid.Row="11" HorizontalAlignment="Right" Width="205" Height="70" VerticalAlignment="Bottom" Grid.ColumnSpan="4" Grid.RowSpan="2"/>
+            Drop="Panel_Drop" Margin="50,0,0,21" RenderTransformOrigin="0.741,-1.815" Grid.Column="1" Grid.Row="11" HorizontalAlignment="Left" Width="205" Height="70" VerticalAlignment="Bottom" Grid.ColumnSpan="4" Grid.RowSpan="2">
+            <TextBox Name="Platz8" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="100,0,0,39" RenderTransformOrigin="0.741,-1.815" Grid.Column="11" Grid.Row="5" HorizontalAlignment="Left" Width="205" Height="70" VerticalAlignment="Bottom" Grid.ColumnSpan="4" Grid.RowSpan="2"/>
+            Drop="Panel_Drop" Margin="90,0,0,21" RenderTransformOrigin="0.741,-1.815" Grid.Column="11" Grid.Row="11" HorizontalAlignment="Left" Width="205" Height="70" VerticalAlignment="Bottom" Grid.ColumnSpan="4" Grid.RowSpan="2">
+            <TextBox Name="Platz31" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="0,0,241,39" RenderTransformOrigin="0.741,-1.815" Grid.Column="16" Grid.Row="5" HorizontalAlignment="Right" Width="205" Height="70" VerticalAlignment="Bottom" Grid.ColumnSpan="4" Grid.RowSpan="2"/>
+            Drop="Panel_Drop" Margin="0,0,241,21" RenderTransformOrigin="0.741,-1.815" Grid.Column="16" Grid.Row="11" HorizontalAlignment="Right" Width="205" Height="70" VerticalAlignment="Bottom" Grid.ColumnSpan="4" Grid.RowSpan="2">
+            <TextBox Name="Platz32" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="20,15,0,0" RenderTransformOrigin="0.741,-1.815" Grid.Column="11" Grid.Row="2" HorizontalAlignment="Left" Width="205" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
+            Drop="Panel_Drop" Margin="100,0,0,39" RenderTransformOrigin="0.741,-1.815" Grid.Column="11" Grid.Row="5" HorizontalAlignment="Left" Width="205" Height="70" VerticalAlignment="Bottom" Grid.ColumnSpan="4" Grid.RowSpan="2">
+            <TextBox Name="Platz14" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="0,15,162,0" RenderTransformOrigin="0.741,-1.815" Grid.Column="18" Grid.Row="2" HorizontalAlignment="Right" Width="205" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+            Drop="Panel_Drop" Margin="0,0,241,39" RenderTransformOrigin="0.741,-1.815" Grid.Column="16" Grid.Row="5" HorizontalAlignment="Right" Width="205" Height="70" VerticalAlignment="Bottom" Grid.ColumnSpan="4" Grid.RowSpan="2">
+            <TextBox Name="Platz13" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="0,2,162,0" RenderTransformOrigin="0.741,-1.815" Grid.Column="18" Grid.Row="1" HorizontalAlignment="Right" Width="205" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+            Drop="Panel_Drop" Margin="20,15,0,0" RenderTransformOrigin="0.741,-1.815" Grid.Column="11" Grid.Row="2" HorizontalAlignment="Left" Width="205" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3" Grid.RowSpan="2">
+            <TextBox Name="Platz15" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="172,2,0,0" RenderTransformOrigin="0.741,-1.815" Grid.Column="19" Grid.Row="1" HorizontalAlignment="Left" Width="205" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3"/>
+            Drop="Panel_Drop" Margin="0,15,162,0" RenderTransformOrigin="0.741,-1.815" Grid.Column="18" Grid.Row="2" HorizontalAlignment="Right" Width="205" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <TextBox Name="Platz18" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="172,15,0,0" RenderTransformOrigin="0.741,-1.815" Grid.Column="19" Grid.Row="2" HorizontalAlignment="Left" Width="205" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
+            Drop="Panel_Drop" Margin="0,2,162,0" RenderTransformOrigin="0.741,-1.815" Grid.Column="18" Grid.Row="1" HorizontalAlignment="Right" Width="205" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="2">
+            <TextBox Name="Platz17" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="251,0,0,41" RenderTransformOrigin="0.741,-1.815" Grid.Column="19" Grid.Row="5" HorizontalAlignment="Left" Width="205" Height="70" VerticalAlignment="Bottom" Grid.ColumnSpan="4" Grid.RowSpan="2"/>
+            Drop="Panel_Drop" Margin="172,2,0,0" RenderTransformOrigin="0.741,-1.815" Grid.Column="19" Grid.Row="1" HorizontalAlignment="Left" Width="205" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3">
+            <TextBox Name="Platz22" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="0,0,54,39" RenderTransformOrigin="0.741,-1.815" Grid.Column="24" Grid.Row="5" HorizontalAlignment="Right" Width="205" Height="70" VerticalAlignment="Bottom" Grid.ColumnSpan="4" Grid.RowSpan="2"/>
+            Drop="Panel_Drop" Margin="172,15,0,0" RenderTransformOrigin="0.741,-1.815" Grid.Column="19" Grid.Row="2" HorizontalAlignment="Left" Width="205" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3" Grid.RowSpan="2">
+            <TextBox Name="Platz21" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" RenderTransformOrigin="0.741,-1.815" Grid.Column="25" Grid.Row="2" HorizontalAlignment="Right" Width="179" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3" Grid.RowSpan="2" Margin="0,17,0,0"/>
+            Drop="Panel_Drop" Margin="251,0,0,41" RenderTransformOrigin="0.741,-1.815" Grid.Column="19" Grid.Row="5" HorizontalAlignment="Left" Width="205" Height="70" VerticalAlignment="Bottom" Grid.ColumnSpan="4" Grid.RowSpan="2">
+            <TextBox Name="Platz20" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" RenderTransformOrigin="0.741,-1.815" Grid.Column="25" Grid.Row="1" HorizontalAlignment="Right" Width="179" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3" Margin="0,2,0,0"/>
+            Drop="Panel_Drop" Margin="0,0,54,39" RenderTransformOrigin="0.741,-1.815" Grid.Column="24" Grid.Row="5" HorizontalAlignment="Right" Width="205" Height="70" VerticalAlignment="Bottom" Grid.ColumnSpan="4" Grid.RowSpan="2">
+            <TextBox Name="Platz19" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="250,0,0,21" RenderTransformOrigin="0.741,-1.815" Grid.Column="19" Grid.Row="11" HorizontalAlignment="Left" Width="205" Height="70" VerticalAlignment="Bottom" Grid.ColumnSpan="4" Grid.RowSpan="2"/>
+            Drop="Panel_Drop" RenderTransformOrigin="0.741,-1.815" Grid.Column="25" Grid.Row="2" HorizontalAlignment="Right" Width="179" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3" Grid.RowSpan="2" Margin="0,17,0,0">
+            <TextBox Name="Platz24" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="0,0,55,21" RenderTransformOrigin="0.741,-1.815" Grid.Column="24" Grid.Row="11" HorizontalAlignment="Right" Width="205" Height="70" VerticalAlignment="Bottom" Grid.ColumnSpan="4" Grid.RowSpan="2"/>
+            Drop="Panel_Drop" RenderTransformOrigin="0.741,-1.815" Grid.Column="25" Grid.Row="1" HorizontalAlignment="Right" Width="179" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3" Margin="0,2,0,0">
+            <TextBox Name="Platz23" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="172,61.567,0,0" RenderTransformOrigin="0.741,-1.815" Grid.Column="19" Grid.Row="6" HorizontalAlignment="Left" Width="205" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
+            Drop="Panel_Drop" Margin="250,0,0,21" RenderTransformOrigin="0.741,-1.815" Grid.Column="19" Grid.Row="11" HorizontalAlignment="Left" Width="205" Height="70" VerticalAlignment="Bottom" Grid.ColumnSpan="4" Grid.RowSpan="2">
+            <TextBox Name="Platz26" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" Margin="173,17.769,0,0" RenderTransformOrigin="0.741,-1.815" Grid.Column="19" Grid.Row="8" HorizontalAlignment="Left" Width="205" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
+            Drop="Panel_Drop" Margin="0,0,55,21" RenderTransformOrigin="0.741,-1.815" Grid.Column="24" Grid.Row="11" HorizontalAlignment="Right" Width="205" Height="70" VerticalAlignment="Bottom" Grid.ColumnSpan="4" Grid.RowSpan="2">
+            <TextBox Name="Platz25" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" RenderTransformOrigin="0.741,-1.815" Grid.Column="25" Grid.Row="6" HorizontalAlignment="Right" Width="179" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3" Grid.RowSpan="2" Margin="0,61.567,0,0"/>
+            Drop="Panel_Drop" Margin="172,61.567,0,0" RenderTransformOrigin="0.741,-1.815" Grid.Column="19" Grid.Row="6" HorizontalAlignment="Left" Width="205" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3" Grid.RowSpan="2">
+            <TextBox Name="Platz28" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
         <StackPanel
             Background="DarkGray"
             AllowDrop="True"
             DragOver="Panel_DragOver"
-            Drop="Panel_Drop" RenderTransformOrigin="0.741,-1.815" Grid.Column="25" Grid.Row="8" HorizontalAlignment="Right" Width="179" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3" Grid.RowSpan="2" Margin="0,17.769,0,0"/>
+            Drop="Panel_Drop" Margin="173,17.769,0,0" RenderTransformOrigin="0.741,-1.815" Grid.Column="19" Grid.Row="8" HorizontalAlignment="Left" Width="205" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3" Grid.RowSpan="2">
+            <TextBox Name="Platz27" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" RenderTransformOrigin="0.741,-1.815" Grid.Column="25" Grid.Row="6" HorizontalAlignment="Right" Width="179" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3" Grid.RowSpan="2" Margin="0,61.567,0,0">
+            <TextBox Name="Platz29" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" RenderTransformOrigin="0.741,-1.815" Grid.Column="25" Grid.Row="8" HorizontalAlignment="Right" Width="179" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3" Grid.RowSpan="2" Margin="0,17.769,0,0">
+            <TextBox Name="Platz30" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
     </Grid>
 </Window>
