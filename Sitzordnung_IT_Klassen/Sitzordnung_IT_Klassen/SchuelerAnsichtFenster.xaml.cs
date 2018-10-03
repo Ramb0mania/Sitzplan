@@ -69,11 +69,11 @@ namespace Sitzordnung_IT_Klassen
             {
                 while (!reader.EndOfStream)
                 {
-                    name = "";
-                    vorname = "";
-                    beruf = "";
-                    betrieb = "";
-                    geschlecht = "";
+                    name        = "";
+                    vorname     = "";
+                    beruf       = "";
+                    betrieb     = "";
+                    geschlecht  = "";
 
                     var line = reader.ReadLine();
                     var values = line.Split(';');

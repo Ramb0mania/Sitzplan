@@ -53,5 +53,11 @@ namespace Sitzordnung_IT_Klassen
             Environment.Exit(0);
             //this.Close();
         }
+
+        public static int RandomNumber(int min, int max)
+        {
+            Random random = new Random();
+            return random.Next(min, max);
+        }
     }
 }
