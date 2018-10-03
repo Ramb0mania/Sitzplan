@@ -9,15 +9,15 @@ namespace Sitzordnung_IT_Klassen
 {
     class Schueler
     {
-        private string Name;
-        private string Vorname;
-        private string Beruf;
-        private string Betrieb;
-        private string Geschlecht;  
-        private int Sitzplatz;
+        public string Name { get; set; }
+        public string Vorname { get; set; }
+        public string Beruf { get; set; }
+        public string Betrieb { get; set; }
+        public string Geschlecht { get; set; }
+        public int Sitzplatz { get; set; }
 
-    //Schülerobjekt
-    public Schueler(String name, String vorname, String beruf, String betrieb, String geschlecht)
+        //Schülerobjekt
+        public Schueler(String name, String vorname, String beruf, String betrieb, String geschlecht)
         {
             this.Name       = name;
             this.Vorname    = vorname;
