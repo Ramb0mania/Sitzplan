@@ -18,7 +18,7 @@ namespace Sitzordnung_IT_Klassen
             this.Geschlecht = geschlecht;
         }
         
-        //Hier wurde Wasserzeichen-Methode gelöscht
+        //Hier wurde Wasserzeichen-Methode(~) gelöscht
 
         private string Name { get; set; }
         private string Vorname { get; set; }

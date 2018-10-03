@@ -26,10 +26,11 @@ namespace Sitzordnung_IT_Klassen
         private TextBox txtPath;
         private OpenFileDialog dlg;
         private Funktion func;
+        private List<Schueler> schuelerListe = new List<Schueler>();
 
         public MainWindow()
         {
-            List<Schueler> schuelerListe = new List<Schueler> {
+            /*List<Schueler> schuelerListe = new List<Schueler> {
                 new Schueler("test1", "test", "test", "test", "test"),
                 new Schueler("test2", "test", "test", "test", "test"),
                 new Schueler("test3", "test", "test", "test", "test"),
@@ -52,7 +53,7 @@ namespace Sitzordnung_IT_Klassen
                 new Schueler("test20", "test", "test", "test", "test"),
                 new Schueler("test21", "test", "test", "test", "test")
             };
-
+            */
             InitializeComponent();
         }
 
@@ -193,6 +194,17 @@ namespace Sitzordnung_IT_Klassen
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            List<int> besetztePlaetze = new List<int>();
+            int maxPlaetze = 32;
+
+            besetztePlaetze.Clear();
+
+
 
         }
     }
