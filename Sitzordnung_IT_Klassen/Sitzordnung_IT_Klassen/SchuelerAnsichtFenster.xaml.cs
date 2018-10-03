@@ -15,7 +15,7 @@ namespace Sitzordnung_IT_Klassen
     public partial class SchuelerAnsichtFenster : Window
     {
         OpenFileDialog dlg;
-        TextBox txtPath;
+        String txtPath;
 
         public SchuelerAnsichtFenster()
         {
@@ -29,6 +29,36 @@ namespace Sitzordnung_IT_Klassen
 
         private void ReadCSV(String file)
         {
+            ErstmalAllesSauberMachen();
+            String rowValue;
+            string[] cellValue;
+
+            if (File.Exists(file))
+            {
+                StreamReader streamReader = new StreamReader(file);
+                rowValue = streamReader.ReadLine();
+                cellValue = rowValue.Split(';');
+
+                for (int i = 0; i <= cellValue.Count() - 1; i++)
+                {
+                    DataGridColumn c = new DataGridTextColumn();
+
+                    c.Header = cellValue[i];
+                    datagrid1.Columns.Add(c);
+                }
+
+                while (streamReader.Peek() != -1)
+                {
+                    rowValue = streamReader.ReadLine();
+                    cellValue = rowValue.Split(';');
+
+                }
+                streamReader.Close();
+            }
+        }
+
+        public static void ladeSchuelerAusCSV(string file)
+        {
             string name;
             string vorname;
             string beruf;
@@ -37,25 +67,27 @@ namespace Sitzordnung_IT_Klassen
 
             using (var reader = new StreamReader(file))
             {
-
                 while (!reader.EndOfStream)
                 {
-                    name        = "";
-                    vorname     = "";
-                    beruf       = "";
-                    betrieb     = "";
-                    geschlecht  = "";
+                    name = "";
+                    vorname = "";
+                    beruf = "";
+                    betrieb = "";
+                    geschlecht = "";
 
                     var line = reader.ReadLine();
                     var values = line.Split(';');
 
-                    name        = values[0];
-                    vorname     = values[1];
-                    beruf       = values[2];
-                    betrieb     = values[3];
-                    geschlecht  = values[4];
+                    name = values[0];
+                    vorname = values[1];
+                    beruf = values[2];
+                    betrieb = values[3];
+                    geschlecht = values[4];
+
+                    Console.WriteLine(name + beruf + vorname + betrieb + geschlecht);
                 }
             }
+
         }
             /*void Button_Click(object sender, RoutedEventArgs e)
             {
@@ -88,7 +120,7 @@ namespace Sitzordnung_IT_Klassen
             private void Click_btn_oeffne(object sender, RoutedEventArgs e)
             {
                 dlg = new OpenFileDialog();
-                txtPath = new TextBox();
+                
 
                 if (dlg.ShowDialog() == true)
                 {
@@ -97,11 +129,11 @@ namespace Sitzordnung_IT_Klassen
                     {
                         TextReader reader = new StreamReader(s);
                         string st = reader.ReadToEnd();
-                        txtPath.Text = dlg.FileName;
-                        Console.WriteLine(txtPath.Text);
+                        txtPath = dlg.FileName;
+                        Console.WriteLine(txtPath);
                     }
                 }
-
+            ladeSchuelerAusCSV(txtPath);
             }
 
         private void Button_Click(object sender, RoutedEventArgs e)
