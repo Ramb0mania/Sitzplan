@@ -10,19 +10,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Sitzordnung_IT_Klassen
 {
     /// <summary>
-    /// Interaktionslogik für MainWindow.xaml
+    /// Interaktionslogik für SchließenAbfrage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class SchließenAbfrage : Window
     {
-        public MainWindow()
+        private void schließeFenster(object sender, RoutedEventArgs e)
         {
-            InitializeComponent();
+            this.Close();
+        }
+
+        private void schließeAnwendung(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

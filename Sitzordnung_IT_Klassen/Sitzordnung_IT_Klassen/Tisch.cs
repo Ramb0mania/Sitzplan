@@ -30,11 +30,5 @@ namespace Sitzordnung_IT_Klassen
             get { return Tischnr; }
             set { Tischnr = value; }
         }
-
-        public Raum Raum
-        {
-            get { return Raum; }
-            set { Raum = value; }
-        }
     }
 }
