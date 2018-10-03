@@ -8,11 +8,11 @@ namespace Sitzordnung_IT_Klassen
 {
     class Schueler
     {
-        private string Name         { get; set; }
-        private string Vorname      { get; set; }
-        private string Beruf        { get; set; }
-        private string Betrieb      { get; set; }
-        private string Geschlecht   { get; set; }
+        public string Name         { get; set; }
+        public string Vorname      { get; set; }
+        public string Beruf        { get; set; }
+        public string Betrieb      { get; set; }
+        public string Geschlecht   { get; set; }
         private int Sitzplatz;
 
     //Schülerobjekt
