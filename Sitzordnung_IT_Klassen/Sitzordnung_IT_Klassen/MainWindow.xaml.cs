@@ -78,7 +78,7 @@ namespace Sitzordnung_IT_Klassen
 
         private void Button_import_Click(object sender, RoutedEventArgs e)
         {
-           dlg = new OpenFileDialog();
+            dlg = new OpenFileDialog();
             txtPath = new TextBox();
            
 
@@ -123,15 +123,15 @@ namespace Sitzordnung_IT_Klassen
         {
             if (e.Data.GetDataPresent("Object"))
             {
-                // These Effects values are used in the drag source's
-                // GiveFeedback event handler to determine which cursor to display.
+                // Diese Effektwerte werden im GiveFeedback Event-handler der Drag source
+                // genutzt um den richtigen cursor darzustellen.
                 if (e.KeyStates == DragDropKeyStates.ControlKey)
                 {
-                    e.Effects = DragDropEffects.Copy;
+                    e.Effects = DragDropEffects.Move;
                 }
                 else
                 {
-                    e.Effects = DragDropEffects.Move;
+                    e.Effects = DragDropEffects.Copy;
                 }
             }
         }
@@ -155,19 +155,19 @@ namespace Sitzordnung_IT_Klassen
                     if (_parent != null)
                     {
                         if (e.KeyStates == DragDropKeyStates.ControlKey &&
-                            e.AllowedEffects.HasFlag(DragDropEffects.Copy))
+                            e.AllowedEffects.HasFlag(DragDropEffects.Move))
                         {
                             SchuelerGUI _schuelerGUI = new SchuelerGUI((SchuelerGUI)_element);
                             _panel.Children.Add(_schuelerGUI);
                             // set the value to return to the DoDragDrop call
-                            e.Effects = DragDropEffects.Copy;
+                            e.Effects = DragDropEffects.Move;
                         }
-                        else if (e.AllowedEffects.HasFlag(DragDropEffects.Move))
+                        else if (e.AllowedEffects.HasFlag(DragDropEffects.Copy))
                         {
                             _parent.Children.Remove(_element);
                             _panel.Children.Add(_element);
                             // set the value to return to the DoDragDrop call
-                            e.Effects = DragDropEffects.Move;
+                            e.Effects = DragDropEffects.Copy;
                         }
                     }
                 }

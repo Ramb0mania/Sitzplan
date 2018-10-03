@@ -36,7 +36,7 @@ namespace Sitzordnung_IT_Klassen
             }
         }
 
-        public string ToCsVString()
+       /* public string ToCsVString()
         {
             for (int i = 0; i < SchuelerListe.Count; i++)
             {
@@ -44,7 +44,7 @@ namespace Sitzordnung_IT_Klassen
 
             }
 
-        }
+        } */
         public void verteileSchueler()
         {
             throw new System.NotImplementedException();
