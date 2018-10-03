@@ -155,6 +155,7 @@ namespace Sitzordnung_IT_Klassen
             List<int> besetztePlaetze = new List<int>();
             int maxPlaetze = 30;
             int platz;
+            string platzName;
 
             besetztePlaetze.Clear();
 
@@ -168,8 +169,16 @@ namespace Sitzordnung_IT_Klassen
                 }
 
                 besetztePlaetze.Add(platz);
-                schueler.SitzplatzSet(platz);
+                schueler.SetSitzplatz(platz);
+
+                switch (platz)
+                {
+                    case 1:
+                        Platz1.Text = Schueler
+                        Break;
+                }
             }
+
         }
 
         public static int RandomNumber(int min, int max)

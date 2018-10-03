@@ -9,11 +9,11 @@ namespace Sitzordnung_IT_Klassen
 {
     class Schueler
     {
-        public string Name         { get; set; }
-        private string Vorname      { get; set; }
-        private string Beruf        { get; set; }
-        private string Betrieb      { get; set; }
-        private string Geschlecht   { get; set; }
+        private string Name;
+        private string Vorname;
+        private string Beruf;
+        private string Betrieb;
+        private string Geschlecht;  
         private int Sitzplatz;
 
     //Schülerobjekt
@@ -28,9 +28,59 @@ namespace Sitzordnung_IT_Klassen
         
         //Hier wurde Wasserzeichen-Methode(~) gelöscht
 
-        public void SitzplatzSet(int s)
+        public void SetName(string name)
+        {
+            this.Name = name;
+        }
+
+        public void SetVorname(string vorname)
+        {
+            this.Vorname = vorname;
+        }
+
+        public void SetBeruf(string beruf)
+        {
+            this.Beruf = beruf;
+        }
+
+        public void SetBetrieb(string betrieb)
+        {
+            this.Betrieb = betrieb;
+        }
+
+        public void SetGeschlecht(string geschlecht)
+        {
+            this.Geschlecht = geschlecht;
+        }
+
+        public void SetSitzplatz(int s)
         {
             this.Sitzplatz = s;
+        }
+
+        public string GetName()
+        {
+            return Name;
+        }
+
+        public string GetVorname()
+        {
+            return Vorname;
+        }
+
+        public string GetBeruf()
+        {
+            return Beruf;
+        }
+
+        public string GetBetrieb()
+        {
+            return Betrieb;
+        }
+
+        public string GetGeschlecht()
+        {
+            return Geschlecht;
         }
     }
 }
