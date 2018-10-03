@@ -179,6 +179,10 @@ namespace Sitzordnung_IT_Klassen
 
             besetztePlaetze.Clear();
 
+            foreach (Schueler schuelerListe in schuelerListe)
+            {
+
+            }
 
 
         }
