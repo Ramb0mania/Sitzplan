@@ -1,4 +1,5 @@
 ﻿using Microsoft.Win32;
+using Sitzordnung_IT_Klassen;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -24,6 +25,7 @@ namespace Projekt_Sitzordnung
     {
         private TextBox txtPath;
         private OpenFileDialog dlg;
+        private Funktion func;
         public MainWindow()
         {
             InitializeComponent();
@@ -80,6 +82,14 @@ namespace Projekt_Sitzordnung
             Console.WriteLine("Programmaufruf Anzeigen");
                 MessageBox.Show(sr.ReadToEnd());
                 sr.Close();
+        }
+
+        private void Button_add_Click(object sender, RoutedEventArgs e)
+        {
+            AddSchueler w2 = new AddSchueler();
+            w2.InitializeComponent();
+            w2.Show();
+
         }
     }
 }

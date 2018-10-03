@@ -15,13 +15,16 @@ using System.Windows.Shapes;
 namespace Sitzordnung_IT_Klassen
 {
     /// <summary>
-    /// Interaktionslogik für Window1.xaml
+    /// Interaktionslogik für Window2.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class Window2 : Window
     {
-        public Window1()
+        public Window2()
         {
-            InitializeComponent();
+        }
+        private void Button_add_Click(object sender, RoutedEventArgs e)
+        {
+            string name = Box_
         }
     }
 }
