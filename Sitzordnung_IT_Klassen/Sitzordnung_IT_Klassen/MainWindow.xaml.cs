@@ -30,30 +30,6 @@ namespace Sitzordnung_IT_Klassen
 
         public MainWindow()
         {
-            /*List<Schueler> schuelerListe = new List<Schueler> {
-                new Schueler("test1", "test", "test", "test", "test"),
-                new Schueler("test2", "test", "test", "test", "test"),
-                new Schueler("test3", "test", "test", "test", "test"),
-                new Schueler("test4", "test", "test", "test", "test"),
-                new Schueler("test5", "test", "test", "test", "test"),
-                new Schueler("test6", "test", "test", "test", "test"),
-                new Schueler("test7", "test", "test", "test", "test"),
-                new Schueler("test8", "test", "test", "test", "test"),
-                new Schueler("test9", "test", "test", "test", "test"),
-                new Schueler("test10", "test", "test", "test", "test"),
-                new Schueler("test11", "test", "test", "test", "test"),
-                new Schueler("test12", "test", "test", "test", "test"),
-                new Schueler("test13", "test", "test", "test", "test"),
-                new Schueler("test14", "test", "test", "test", "test"),
-                new Schueler("test15", "test", "test", "test", "test"),
-                new Schueler("test16", "test", "test", "test", "test"),
-                new Schueler("test17", "test", "test", "test", "test"),
-                new Schueler("test18", "test", "test", "test", "test"),
-                new Schueler("test19", "test", "test", "test", "test"),
-                new Schueler("test20", "test", "test", "test", "test"),
-                new Schueler("test21", "test", "test", "test", "test")
-            };
-            */
             InitializeComponent();
         }
 

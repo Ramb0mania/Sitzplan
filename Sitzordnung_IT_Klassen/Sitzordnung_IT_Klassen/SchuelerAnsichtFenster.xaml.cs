@@ -14,28 +14,35 @@ namespace Sitzordnung_IT_Klassen
     /// </summary>
     public partial class SchuelerAnsichtFenster : Window
     {
-        void ErstmalAllesSauberMachen()
+        OpenFileDialog dlg;
+        TextBox txtPath;
+
+        public SchuelerAnsichtFenster()
+        {
+            InitializeComponent();
+        }
+
+        private void ErstmalAllesSauberMachen()
         {
             datagrid1.Columns.Clear();
         }
 
-        void ReadCSV(String file)
+        private void ReadCSV(String file)
         {
             ErstmalAllesSauberMachen();
             String rowValue;
             string[] cellValue;
 
-            if (System.IO.File.Exists (file))
+            if (System.IO.File.Exists(file))
             {
                 StreamReader streamReader = new StreamReader(file);
                 rowValue = streamReader.ReadLine();
                 cellValue = rowValue.Split(';');
 
-                for (int i = 0;i<= cellValue.Count()-1 ;i++)
+                for (int i = 0; i <= cellValue.Count() - 1; i++)
                 {
                     DataGridColumn c = new DataGridTextColumn();
 
-                    //c.Name = cellValue[i];
                     c.Header = cellValue[i];
                     datagrid1.Columns.Add(c);
                 }
@@ -44,21 +51,44 @@ namespace Sitzordnung_IT_Klassen
                 {
                     rowValue = streamReader.ReadLine();
                     cellValue = rowValue.Split(';');
-                    
-                }
 
+                }
                 streamReader.Close();
             }
-
-            void Button_import_Click(object sender, RoutedEventArgs e)
+        }
+            /*void Button_Click(object sender, RoutedEventArgs e)
             {
-                TextBox txtPath;
-                OpenFileDialog dlg;
+                List<Schueler> schuelerListe = new List<Schueler> {
+                new Schueler("test1", "test", "test", "test", "test"),
+                new Schueler("test2", "test", "test", "test", "test"),
+                new Schueler("test3", "test", "test", "test", "test"),
+                new Schueler("test4", "test", "test", "test", "test"),
+                new Schueler("test5", "test", "test", "test", "test"),
+                new Schueler("test6", "test", "test", "test", "test"),
+                new Schueler("test7", "test", "test", "test", "test"),
+                new Schueler("test8", "test", "test", "test", "test"),
+                new Schueler("test9", "test", "test", "test", "test"),
+                new Schueler("test10", "test", "test", "test", "test"),
+                new Schueler("test11", "test", "test", "test", "test"),
+                new Schueler("test12", "test", "test", "test", "test"),
+                new Schueler("test13", "test", "test", "test", "test"),
+                new Schueler("test14", "test", "test", "test", "test"),
+                new Schueler("test15", "test", "test", "test", "test"),
+                new Schueler("test16", "test", "test", "test", "test"),
+                new Schueler("test17", "test", "test", "test", "test"),
+                new Schueler("test18", "test", "test", "test", "test"),
+                new Schueler("test19", "test", "test", "test", "test"),
+                new Schueler("test20", "test", "test", "test", "test"),
+                new Schueler("test21", "test", "test", "test", "test")
+            };
+                datagrid1.ItemsSource = schuelerListe;
+            }*/
+
+            private void Click_btn_oeffne(object sender, RoutedEventArgs e)
+            {
                 dlg = new OpenFileDialog();
                 txtPath = new TextBox();
 
-
-                //Open the Pop-Up Window to select the file 
                 if (dlg.ShowDialog() == true)
                 {
                     new FileInfo(dlg.FileName);
@@ -71,6 +101,15 @@ namespace Sitzordnung_IT_Klassen
                     }
                 }
             }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
