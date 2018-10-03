@@ -10,7 +10,7 @@ namespace Sitzordnung_IT_Klassen
     {
         //CSV-Datei Anbindung für Schüler.csv
         
-        public void leseDatei(string csvPfad)
+        public void LeseDatei(string csvPfad)
         {
             String wert;
             string[] arraywert;
@@ -33,17 +33,12 @@ namespace Sitzordnung_IT_Klassen
         }
 
 
-        public void verteileSchueler()
+        public void LoeschenSchueler()
         {
             throw new System.NotImplementedException();
         }
 
-        public void loeschenSchueler()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void einfuegenSchueler()
+        public void EinfuegenSchueler()
         {
             throw new System.NotImplementedException();
         }

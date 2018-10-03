@@ -16,14 +16,13 @@ namespace Sitzordnung_IT_Klassen
         private int    Sitzplatz    { get; set; }
 
         //Schülerobjekt
-        public Schueler(String name, String vorname, String beruf, String betrieb, String geschlecht, int sitzplatz)
+        public Schueler(String name, String vorname, String beruf, String betrieb, String geschlecht)
         {
             this.Name = name;
             this.Vorname = vorname;
             this.Beruf = beruf;
             this.Betrieb = betrieb;
             this.Geschlecht = geschlecht;
-            this.Sitzplatz = sitzplatz;
         }
         
         //Hier wurde Wasserzeichen-Methode(~) gelöscht
