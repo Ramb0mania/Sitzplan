@@ -13,7 +13,6 @@
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="106" Margin="-1,0,0,0" VerticalAlignment="Top" Width="228"/>
         <Button Name="Button_add" Content="Add Schüler" HorizontalAlignment="Left" Margin="116,10,0,0" VerticalAlignment="Top" Width="89" RenderTransformOrigin="1.722,0.351" Click="Button_add_Click"/>
         <Button Name="Button_import" Content="Import Schüler" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="89" Click="Button_import_Click"/>
-        <Button Name="Button_content" Content="Generiere Raum" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top" Width="195" Click="Button_Click" />
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="106" Margin="567,0,-3,0" VerticalAlignment="Top" Width="228">
             
         </Border>
