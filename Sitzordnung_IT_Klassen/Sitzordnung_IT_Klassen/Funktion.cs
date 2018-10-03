@@ -36,15 +36,7 @@ namespace Sitzordnung_IT_Klassen
             }
         }
 
-        public string ToCsVString()
-        {
-            for (int i = 0; i < SchuelerListe.Count; i++)
-            {
-                return SchuelerListe[i].Name + " " + SchuelerListe[i].Vorname + " " + SchuelerListe[i].Beruf + " " + SchuelerListe[i].Betrieb + " " + SchuelerListe[i].Geschlecht;
 
-            }
-
-        }
         public void verteileSchueler()
         {
             throw new System.NotImplementedException();
