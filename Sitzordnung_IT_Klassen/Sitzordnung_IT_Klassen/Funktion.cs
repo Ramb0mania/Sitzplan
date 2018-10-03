@@ -55,6 +55,5 @@ namespace Sitzordnung_IT_Klassen
             Environment.Exit(0);
             //this.Close();
         }
-
     }
 }

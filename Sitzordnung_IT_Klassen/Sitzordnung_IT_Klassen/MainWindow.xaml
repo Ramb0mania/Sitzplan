@@ -5,17 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projekt_Sitzordnung"
         mc:Ignorable="d"
-        Title="MainWindow" Height="556.197" Width="800">
+        Title="Sitzplanordnung" Height="556.197" Width="800">
     <Grid Margin="0,0,0,-2.5">
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="106" Margin="-1,0,0,0" VerticalAlignment="Top" Width="228"/>
-        <Button Name="Button_add" Content="Add Schüler" HorizontalAlignment="Left" Margin="116,10,0,0" VerticalAlignment="Top" Width="89" RenderTransformOrigin="1.722,0.351"/>
-        <TextBox Name="Text_Anzahl" HorizontalAlignment="Left" Height="28" Margin="116,40,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="89"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="129" Margin="-1,0,0,0" VerticalAlignment="Top" Width="228"/>
+        <Button Name="Button_add" Content="Add Schüler" HorizontalAlignment="Left" Margin="116,10,0,0" VerticalAlignment="Top" Width="89" RenderTransformOrigin="1.722,0.351" Click="Button_add_Click"/>
+        <TextBox Name="Text_Anzahl"  HorizontalAlignment="Left" Height="28" Margin="116,40,0,0" TextWrapping="Wrap" Text="Anzahl Schüler" VerticalAlignment="Top" Width="89"/>
         <Label Content="Anzahl der Tische" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Height="32" Width="128"/>
-        <Button Name="Button_import" Content="Import Schüler" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="89"/>
+        <Button Name="Button_import" Content="Import Schüler" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="89" Click="Button_import_Click"/>
         <Button Name="Button_content" Content="Generiere Raum" HorizontalAlignment="Left" Margin="10,73,0,0" VerticalAlignment="Top" Width="195" Click="Button_Click" />
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="106" Margin="567,0,0,0" VerticalAlignment="Top" Width="228"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="106" Margin="567,0,-3,0" VerticalAlignment="Top" Width="228"/>
         <Button Name="Button_edit"  Content="Edit Schüler" HorizontalAlignment="Left" Margin="583,10,0,0" VerticalAlignment="Top" Width="89"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="50,173,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="47,380,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
             <Border.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -25,7 +28,7 @@
                 </TransformGroup>
             </Border.RenderTransform>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="95,173,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="95,380,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
             <Border.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -35,7 +38,7 @@
                 </TransformGroup>
             </Border.RenderTransform>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="75,247,0,0" VerticalAlignment="Top" Width="94" RenderTransformOrigin="0.5,0.5">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="75,455,0,0" VerticalAlignment="Top" Width="94" RenderTransformOrigin="0.5,0.5">
             <Border.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -45,7 +48,7 @@
                 </TransformGroup>
             </Border.RenderTransform>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="195,175,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="46,176,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
             <Border.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -55,7 +58,7 @@
                 </TransformGroup>
             </Border.RenderTransform>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="240,175,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="92,175,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
             <Border.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -65,7 +68,7 @@
                 </TransformGroup>
             </Border.RenderTransform>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="220,249,0,0" VerticalAlignment="Top" Width="94" RenderTransformOrigin="0.5,0.5">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="74,249,0,0" VerticalAlignment="Top" Width="94" RenderTransformOrigin="0.5,0.5">
             <Border.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -75,7 +78,7 @@
                 </TransformGroup>
             </Border.RenderTransform>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="337,175,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="314,206,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
             <Border.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -85,7 +88,7 @@
                 </TransformGroup>
             </Border.RenderTransform>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="382,175,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="361,205,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
             <Border.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -95,17 +98,17 @@
                 </TransformGroup>
             </Border.RenderTransform>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="362,249,0,0" VerticalAlignment="Top" Width="94" RenderTransformOrigin="0.5,0.5">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="341,279,0,0" VerticalAlignment="Top" Width="94" RenderTransformOrigin="0.999,0.31">
             <Border.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
                     <RotateTransform Angle="180"/>
-                    <TranslateTransform/>
+                    <TranslateTransform X="-93.812" Y="17.1"/>
                 </TransformGroup>
             </Border.RenderTransform>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="472,173,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="614,380,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
             <Border.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -115,7 +118,7 @@
                 </TransformGroup>
             </Border.RenderTransform>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="517,173,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="660,381,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
             <Border.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -125,7 +128,7 @@
                 </TransformGroup>
             </Border.RenderTransform>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="497,247,0,0" VerticalAlignment="Top" Width="94" RenderTransformOrigin="0.5,0.5">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="641,454,0,0" VerticalAlignment="Top" Width="94" RenderTransformOrigin="0.5,0.5">
             <Border.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -165,7 +168,9 @@
                 </TransformGroup>
             </Border.RenderTransform>
         </Border>
-        <Button Content="Schließen" HorizontalAlignment="Left" Margin="688,10,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Zeige Liste" HorizontalAlignment="Left" Margin="686,10,0,0" VerticalAlignment="Top" Width="96" Click="Button_Click_1"/>
+        <Button Content="Verteile Schüler" HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top" Width="195"/> 
+         <!-- Bedingung: Raum muss generiert sein und eine Datei muss angebunden sein -->
 
     </Grid>
 </Window>
