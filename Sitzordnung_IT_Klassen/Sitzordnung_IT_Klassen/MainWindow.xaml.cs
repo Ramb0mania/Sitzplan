@@ -26,8 +26,16 @@ namespace Projekt_Sitzordnung
         private TextBox txtPath;
         private OpenFileDialog dlg;
         private Funktion func;
+
+        protected static List<Schueler> schuelerListe = new List<Schueler>
+        {//Testliste
+            new Schueler {Name = "Schmidt", Vorname = "Anna", Beruf = "Systemintegrator", Betrieb ="Smart GmbH", Geschlecht = "weiblich" },
+
+        };
+
         public MainWindow()
         {
+
             InitializeComponent();
         }
 
@@ -71,7 +79,6 @@ namespace Projekt_Sitzordnung
                     txtPath.Text = dlg.FileName;
                     Console.WriteLine(txtPath.Text);
                 }
-
             }
         }
 

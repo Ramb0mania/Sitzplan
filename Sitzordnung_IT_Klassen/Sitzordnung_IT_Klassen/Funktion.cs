@@ -9,32 +9,42 @@ namespace Sitzordnung_IT_Klassen
     class Funktion
     {
         //CSV-Datei Anbindung für Schüler.csv
-        public List<Schueler> SchuelerListe = new List<Schueler>();
+        
 
         public void leseDatei(string csvPfad)
         {
-            if (Directory.Exists(csvPfad))
+            String wert;
+            string[] arraywert;
+
+            if (File.Exists(csvPfad))
             {
-                XmlSerializer serialiser;
-                TextReader FileStream;
-                if (File.Exists(csvPfad + "\\Schueler.xml"))
+                StreamReader streamReader = new StreamReader(csvPfad);
+                wert = streamReader.ReadLine();
+                arraywert = wert.Split(';');
+
+                for(int i=0;i<= arraywert.Length -1;i++)
                 {
-                    serialiser = new XmlSerializer(typeof(List<Schueler>));
-                    FileStream = new StreamReader(csvPfad + "\\Schueler.xml");
-                    SchuelerListe = (List<Schueler>)serialiser.Deserialize(FileStream);
-                    FileStream.Close();
+                     
                 }
-                else
-                {
-                    MessageBox.Show("Die Datei \"Schueler.xml\" wurde in dem Ortner nicht gefunden:\n" + csvPfad, "Datei laden", MessageBoxButton.OK, MessageBoxImage.Error);
-                }
+
+
+
             }
             else
             {
-                MessageBox.Show("Der zum Laden angegebene Ordner wurde nicht gefunden:\n" + csvPfad, "Datei laden", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Der zum Laden angegebene Pfad wurde nicht gefunden:\n" + csvPfad, "Datei laden", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
+        public string ToCsVString()
+        {
+            for (int i = 0; i < SchuelerListe.Count; i++)
+            {
+                return SchuelerListe[i].Name + " " + SchuelerListe[i].Vorname + " " + SchuelerListe[i].Beruf + " " + SchuelerListe[i].Betrieb + " " + SchuelerListe[i].Geschlecht;
+
+            }
+
+        }
         public void verteileSchueler()
         {
             throw new System.NotImplementedException();
