@@ -152,7 +152,7 @@ namespace Sitzordnung_IT_Klassen
 
         }
 
-            private void oeffneSchuelerListeFenster(object sender, RoutedEventArgs e)
+            private void OeffneSchuelerListeFenster(object sender, RoutedEventArgs e)
         {
             SchließenFenster schließenFenster = new SchließenFenster();
             schließenFenster.Show();
@@ -173,13 +173,13 @@ namespace Sitzordnung_IT_Klassen
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             List<int> besetztePlaetze = new List<int>();
-            int maxPlaetze = 32;
+            int maxPlaetze = 30;
 
             besetztePlaetze.Clear();
 
-           /* foreach (Schueler schueler in schuelerListe)
+            foreach (Schueler schuelerListe in Raum.schuelerListe)
             {
-
+                Funktion.RandomNumber(1, maxPlaetze);
             }
             */
 

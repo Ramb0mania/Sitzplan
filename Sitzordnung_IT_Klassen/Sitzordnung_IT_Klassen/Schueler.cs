@@ -8,6 +8,13 @@ namespace Sitzordnung_IT_Klassen
 {
     class Schueler
     {
+        private string Name         { get; set; }
+        private string Vorname      { get; set; }
+        private string Beruf        { get; set; }
+        private string Betrieb      { get; set; }
+        private string Geschlecht   { get; set; }
+        private int    Sitzplatz    { get; set; }
+
         //Schülerobjekt
         public Schueler(String name, String vorname, String beruf, String betrieb, String geschlecht)
         {
@@ -19,11 +26,5 @@ namespace Sitzordnung_IT_Klassen
         }
         
         //Hier wurde Wasserzeichen-Methode(~) gelöscht
-
-        private string Name { get; set; }
-        private string Vorname { get; set; }
-        private string Beruf { get; set; }
-        private string Betrieb { get; set; }
-        private string Geschlecht { get; set; }
     }
 }
