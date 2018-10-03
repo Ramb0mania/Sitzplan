@@ -24,7 +24,7 @@ namespace Sitzordnung_IT_Klassen
         }
         private void Button_add_Click(object sender, RoutedEventArgs e)
         {
-            string name = Box_
+            //string name = Box_;
         }
     }
 }

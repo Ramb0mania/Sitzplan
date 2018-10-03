@@ -15,18 +15,23 @@ using System.Windows.Shapes;
 namespace Sitzordnung_IT_Klassen
 {
     /// <summary>
-    /// Interaktionslogik für SchließenAbfrage.xaml
+    /// Interaktionslogik für SchließenFenster.xaml
     /// </summary>
-    public partial class SchließenAbfrage : Window
+    public partial class SchließenFenster : Window
     {
-        private void schließeFenster(object sender, RoutedEventArgs e)
+        public SchließenFenster()
         {
-            this.Close();
+            InitializeComponent();
         }
 
         private void schließeAnwendung(object sender, RoutedEventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void schließeFenster(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
