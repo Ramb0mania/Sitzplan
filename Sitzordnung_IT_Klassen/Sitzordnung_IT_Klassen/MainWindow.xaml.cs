@@ -25,15 +25,12 @@ namespace Sitzordnung_IT_Klassen
     {
         private TextBox txtPath;
         private OpenFileDialog dlg;
-        private Funktion func;
 
         public MainWindow()
         {
             InitializeComponent();
         }
-
         
-
         private void GenerateRadioButtons(int Anzahl)
         {
             for (int x = 0; x < Anzahl; x++)
@@ -192,6 +189,7 @@ namespace Sitzordnung_IT_Klassen
                 besetztePlaetze.Add(platz);
                 
             }
+            */
 
 
         }
