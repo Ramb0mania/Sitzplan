@@ -15,6 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Forms;
 
 namespace Sitzordnung_IT_Klassen
 {
@@ -52,11 +53,11 @@ namespace Sitzordnung_IT_Klassen
                 new Schueler("test20", "test", "test", "test", "test"),
                 new Schueler("test21", "test", "test", "test", "test")
             };
+
             InitializeComponent();
         }
 
-
-
+        
 
         private void GenerateRadioButtons(int Anzahl)
         {
@@ -172,6 +173,23 @@ namespace Sitzordnung_IT_Klassen
                     }
                 }
             }
+        }
+
+        private void Button_content_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+            private void oeffneSchuelerListeFenster(object sender, RoutedEventArgs e)
+        {
+            SchließenFenster schließenFenster = new SchließenFenster();
+            schließenFenster.Show();
+        }
+
+        private void Button_edit_Click(object sender, RoutedEventArgs e)
+        {
+            ListeFenster neueAnsicht = new ListeFenster();
+            neueAnsicht.Show();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
