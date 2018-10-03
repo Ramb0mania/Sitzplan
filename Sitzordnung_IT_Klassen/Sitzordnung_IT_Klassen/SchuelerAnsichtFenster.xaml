@@ -7,8 +7,7 @@
         mc:Ignorable="d"
         Title="SchuelerAnsichtFenster" Height="450" Width="641.642">
     <Grid Background="#FF515050">
-
-        <ListView Margin="10,10,121,59" Name="list1" Background="Azure" ItemsSource="{Binding Path = Schueler}">
+        <ListView Margin="10,10,121,59" Name="list1" Background="Azure" ItemsSource="{Binding Path=Schueler}">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Name" Width="75" DisplayMemberBinding="{Binding Name}"></GridViewColumn>
@@ -19,7 +18,7 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button Content="Öffnen" HorizontalAlignment="Left" Margin="539,74,0,0" VerticalAlignment="Top" Width="75" Click="Click_btn_oeffne"/>
+        <Button Content="Öffnen" HorizontalAlignment="Left" Margin="539,77,0,0" VerticalAlignment="Top" Width="75" Click="Click_btn_oeffne"/>
         <Button Content="Speichern" HorizontalAlignment="Left" Margin="539,117,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         <Button Content="Zurück" HorizontalAlignment="Left" Margin="539,153,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
     </Grid>
