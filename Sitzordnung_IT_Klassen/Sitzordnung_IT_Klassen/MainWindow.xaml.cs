@@ -153,9 +153,8 @@ namespace Sitzordnung_IT_Klassen
         private void Verteile_Schueler(object sender, RoutedEventArgs e)
         {
             List<int> besetztePlaetze = new List<int>();
-            int maxPlaetze = 30;
+            int maxPlaetze = 31;
             int platz;
-            string platzName;
 
             besetztePlaetze.Clear();
 
@@ -173,9 +172,99 @@ namespace Sitzordnung_IT_Klassen
 
                 switch (platz)
                 {
-                   /* case 1:
-                        Platz1.Text = Schueler
-                        Break; */
+                    case 1:
+                        Platz1.Text = schueler.GetName();
+                        break;
+                    case 2:
+                        Platz2.Text = schueler.GetName();
+                        break;
+                    case 3:
+                        Platz3.Text = schueler.GetName();
+                        break;
+                    case 4:
+                        Platz4.Text = schueler.GetName();
+                        break;
+                    case 5:
+                        Platz5.Text = schueler.GetName();
+                        break;
+                    case 6:
+                        Platz6.Text = schueler.GetName();
+                        break;
+                    case 7:
+                        Platz7.Text = schueler.GetName();
+                        break;
+                    case 8:
+                        Platz8.Text = schueler.GetName();
+                        break;
+                    case 9:
+                        Platz9.Text = schueler.GetName();
+                        break;
+                    case 10:
+                        Platz10.Text = schueler.GetName();
+                        break;
+                    case 11:
+                        Platz11.Text = schueler.GetName();
+                        break;
+                    case 12:
+                        Platz12.Text = schueler.GetName();
+                        break;
+                    case 13:
+                        Platz13.Text = schueler.GetName();
+                        break;
+                    case 14:
+                        Platz14.Text = schueler.GetName();
+                        break;
+                    case 15:
+                        Platz15.Text = schueler.GetName();
+                        break;
+                    case 16:
+                        Platz16.Text = schueler.GetName();
+                        break;
+                    case 17:
+                        Platz17.Text = schueler.GetName();
+                        break;
+                    case 18:
+                        Platz18.Text = schueler.GetName();
+                        break;
+                    case 19:
+                        Platz19.Text = schueler.GetName();
+                        break;
+                    case 20:
+                        Platz20.Text = schueler.GetName();
+                        break;
+                    case 21:
+                        Platz21.Text = schueler.GetName();
+                        break;
+                    case 22:
+                        Platz22.Text = schueler.GetName();
+                        break;
+                    case 23:
+                        Platz23.Text = schueler.GetName();
+                        break;
+                    case 24:
+                        Platz24.Text = schueler.GetName();
+                        break;
+                    case 25:
+                        Platz25.Text = schueler.GetName();
+                        break;
+                    case 26:
+                        Platz26.Text = schueler.GetName();
+                        break;
+                    case 27:
+                        Platz27.Text = schueler.GetName();
+                        break;
+                    case 28:
+                        Platz28.Text = schueler.GetName();
+                        break;
+                    case 29:
+                        Platz29.Text = schueler.GetName();
+                        break;
+                    case 30:
+                        Platz30.Text = schueler.GetName();
+                        break;
+                    default:
+                        Platz31.Text = schueler.GetName();
+                        break;
                 }
             }
 
@@ -185,6 +274,11 @@ namespace Sitzordnung_IT_Klassen
         {
             Random random = new Random();
             return random.Next(min, max);
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
