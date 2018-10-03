@@ -29,31 +29,32 @@ namespace Sitzordnung_IT_Klassen
 
         private void ReadCSV(String file)
         {
-            ErstmalAllesSauberMachen();
-            String rowValue;
-            string[] cellValue;
+            string name;
+            string vorname;
+            string beruf;
+            string betrieb;
+            string geschlecht;
 
-            if (System.IO.File.Exists(file))
+            using (var reader = new StreamReader(file))
             {
-                StreamReader streamReader = new StreamReader(file);
-                rowValue = streamReader.ReadLine();
-                cellValue = rowValue.Split(';');
 
-                for (int i = 0; i <= cellValue.Count() - 1; i++)
+                while (!reader.EndOfStream)
                 {
-                    DataGridColumn c = new DataGridTextColumn();
+                    name        = "";
+                    vorname     = "";
+                    beruf       = "";
+                    betrieb     = "";
+                    geschlecht  = "";
 
-                    c.Header = cellValue[i];
-                    datagrid1.Columns.Add(c);
+                    var line = reader.ReadLine();
+                    var values = line.Split(';');
+
+                    name        = values[0];
+                    vorname     = values[1];
+                    beruf       = values[2];
+                    betrieb     = values[3];
+                    geschlecht  = values[4];
                 }
-
-                while (streamReader.Peek() != -1)
-                {
-                    rowValue = streamReader.ReadLine();
-                    cellValue = rowValue.Split(';');
-
-                }
-                streamReader.Close();
             }
         }
             /*void Button_Click(object sender, RoutedEventArgs e)
@@ -100,6 +101,7 @@ namespace Sitzordnung_IT_Klassen
                         Console.WriteLine(txtPath.Text);
                     }
                 }
+
             }
 
         private void Button_Click(object sender, RoutedEventArgs e)
