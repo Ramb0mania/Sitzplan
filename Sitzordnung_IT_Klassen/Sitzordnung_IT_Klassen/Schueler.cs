@@ -15,8 +15,8 @@ namespace Sitzordnung_IT_Klassen
         private string Geschlecht   { get; set; }
         private int Sitzplatz;
 
-        //Schülerobjekt
-        public Schueler(String name, String vorname, String beruf, String betrieb, String geschlecht)
+    //Schülerobjekt
+    public Schueler(String name, String vorname, String beruf, String betrieb, String geschlecht)
         {
             this.Name       = name;
             this.Vorname    = vorname;
