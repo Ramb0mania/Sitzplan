@@ -27,38 +27,9 @@ namespace Sitzordnung_IT_Klassen
             datagrid1.Columns.Clear();
         }
 
-        private void ReadCSV(String file)
+        private List<Schueler> ladeSchuelerAusCSV(string file)
         {
-            ErstmalAllesSauberMachen();
-            String rowValue;
-            string[] cellValue;
-
-            if (File.Exists(file))
-            {
-                StreamReader streamReader = new StreamReader(file);
-                rowValue = streamReader.ReadLine();
-                cellValue = rowValue.Split(';');
-
-                for (int i = 0; i <= cellValue.Count() - 1; i++)
-                {
-                    DataGridColumn c = new DataGridTextColumn();
-
-                    c.Header = cellValue[i];
-                    datagrid1.Columns.Add(c);
-                }
-
-                while (streamReader.Peek() != -1)
-                {
-                    rowValue = streamReader.ReadLine();
-                    cellValue = rowValue.Split(';');
-
-                }
-                streamReader.Close();
-            }
-        }
-
-        public static void ladeSchuelerAusCSV(string file)
-        {
+            List<Schueler> schuelerListe = new List<Schueler>();
             string name;
             string vorname;
             string beruf;
@@ -75,49 +46,24 @@ namespace Sitzordnung_IT_Klassen
                     betrieb = "";
                     geschlecht = "";
 
-                    var line = reader.ReadLine();
-                    var values = line.Split(';');
+                    String line = reader.ReadLine();
+                    String[] values = line.Split(';');
 
                     name = values[0];
                     vorname = values[1];
                     beruf = values[2];
                     betrieb = values[3];
                     geschlecht = values[4];
-
-                    Console.WriteLine(name + beruf + vorname + betrieb + geschlecht);
+                    
+                    Schueler schueler = new Schueler(name, vorname, beruf, betrieb, geschlecht);
+                    schuelerListe.Add(schueler);
                 }
+
+                return schuelerListe;
             }
-
         }
-            /*void Button_Click(object sender, RoutedEventArgs e)
-            {
-                List<Schueler> schuelerListe = new List<Schueler> {
-                new Schueler("test1", "test", "test", "test", "test"),
-                new Schueler("test2", "test", "test", "test", "test"),
-                new Schueler("test3", "test", "test", "test", "test"),
-                new Schueler("test4", "test", "test", "test", "test"),
-                new Schueler("test5", "test", "test", "test", "test"),
-                new Schueler("test6", "test", "test", "test", "test"),
-                new Schueler("test7", "test", "test", "test", "test"),
-                new Schueler("test8", "test", "test", "test", "test"),
-                new Schueler("test9", "test", "test", "test", "test"),
-                new Schueler("test10", "test", "test", "test", "test"),
-                new Schueler("test11", "test", "test", "test", "test"),
-                new Schueler("test12", "test", "test", "test", "test"),
-                new Schueler("test13", "test", "test", "test", "test"),
-                new Schueler("test14", "test", "test", "test", "test"),
-                new Schueler("test15", "test", "test", "test", "test"),
-                new Schueler("test16", "test", "test", "test", "test"),
-                new Schueler("test17", "test", "test", "test", "test"),
-                new Schueler("test18", "test", "test", "test", "test"),
-                new Schueler("test19", "test", "test", "test", "test"),
-                new Schueler("test20", "test", "test", "test", "test"),
-                new Schueler("test21", "test", "test", "test", "test")
-            };
-                datagrid1.ItemsSource = schuelerListe;
-            }*/
 
-            private void Click_btn_oeffne(object sender, RoutedEventArgs e)
+        private void Click_btn_oeffne(object sender, RoutedEventArgs e)
             {
                 dlg = new OpenFileDialog();
                 

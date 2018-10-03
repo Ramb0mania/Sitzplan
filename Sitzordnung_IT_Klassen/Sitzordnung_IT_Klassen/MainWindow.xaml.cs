@@ -26,7 +26,6 @@ namespace Sitzordnung_IT_Klassen
         private TextBox txtPath;
         private OpenFileDialog dlg;
         private Funktion func;
-        private List<Schueler> schuelerListe = new List<Schueler>();
 
         public MainWindow()
         {
