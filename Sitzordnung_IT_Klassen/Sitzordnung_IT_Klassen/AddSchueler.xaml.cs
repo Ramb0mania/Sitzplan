@@ -19,6 +19,7 @@ namespace Sitzordnung_IT_Klassen
     /// </summary>
     public partial class AddSchueler : Window
     {
+        Raum raum = new Raum();
         public AddSchueler()
         {
         }
@@ -41,6 +42,7 @@ namespace Sitzordnung_IT_Klassen
             Console.WriteLine(beruf);
             Console.WriteLine(betrieb);
             Console.WriteLine(geschlecht);
+            raum.AddToTisch(new Schueler(name, vorname, beruf, betrieb, geschlecht), 1);
             this.Close();
         }
     }

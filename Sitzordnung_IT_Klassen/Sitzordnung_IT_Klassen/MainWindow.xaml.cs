@@ -39,11 +39,6 @@ namespace Projekt_Sitzordnung
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            GenerateRadioButtons(Convert.ToInt32(Text_Anzahl.Text));
-        }
-
         private void GenerateRadioButtons(int Anzahl)
         {
             for (int x = 0; x < Anzahl; x++)

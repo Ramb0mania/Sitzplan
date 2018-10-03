@@ -9,9 +9,13 @@ namespace Sitzordnung_IT_Klassen
     class Schueler
     {
         //Schülerobjekt
-        public Schueler()
+        public Schueler(String name, String vorname, String beruf, String betrieb, String geschlecht)
         {
-            throw new System.NotImplementedException();
+            this.Name = name;
+            this.Vorname = vorname;
+            this.Beruf = beruf;
+            this.Betrieb = betrieb;
+            this.Geschlecht = geschlecht;
         }
 
         ~Schueler()
@@ -19,31 +23,31 @@ namespace Sitzordnung_IT_Klassen
             throw new System.NotImplementedException();
         }
 
-        public int Name
+        public string Name
         {
             get { return Name; }
             set { Name = value; }
         }
 
-        public int Vorname
+        public string Vorname
         {
             get { return Vorname; }
             set { Vorname = value; }
         }
 
-        public int Beruf
+        public string Beruf
         {
             get { return Beruf; }
             set { Beruf = value; }
         }
 
-        public int Betrieb
+        public string Betrieb
         {
             get { return Betrieb; }
             set { Betrieb = value; }
         }
 
-        public int Geschlecht
+        public string Geschlecht
         {
             get { return Geschlecht; }
             set { Geschlecht = value; }
