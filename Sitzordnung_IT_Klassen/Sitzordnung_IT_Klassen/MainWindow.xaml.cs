@@ -172,19 +172,34 @@ namespace Sitzordnung_IT_Klassen
 
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void Verteile_Schueler(object sender, RoutedEventArgs e)
         {
             List<int> besetztePlaetze = new List<int>();
             int maxPlaetze = 30;
+            int platz;
 
             besetztePlaetze.Clear();
 
             foreach (Schueler schuelerListe in Raum.schuelerListe)
             {
-                Funktion.RandomNumber(1, maxPlaetze);
+                platz = RandomNumber(1, maxPlaetze);
+
+                while (besetztePlaetze.Contains(platz))
+                {
+                    platz = RandomNumber(1, maxPlaetze);
+                }
+
+                besetztePlaetze.Add(platz);
+                
             }
 
 
+        }
+
+        public static int RandomNumber(int min, int max)
+        {
+            Random random = new Random();
+            return random.Next(min, max);
         }
     }
 }

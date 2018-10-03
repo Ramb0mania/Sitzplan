@@ -13,7 +13,7 @@ namespace Sitzordnung_IT_Klassen
         private string Beruf        { get; set; }
         private string Betrieb      { get; set; }
         private string Geschlecht   { get; set; }
-        private int    Sitzplatz    { get; set; }
+        private int Sitzplatz;
 
         //Schülerobjekt
         public Schueler(String name, String vorname, String beruf, String betrieb, String geschlecht)
@@ -26,5 +26,10 @@ namespace Sitzordnung_IT_Klassen
         }
         
         //Hier wurde Wasserzeichen-Methode(~) gelöscht
+
+        public void SitzplatzSet(int s)
+        {
+            this.Sitzplatz = s;
+        }
     }
 }
