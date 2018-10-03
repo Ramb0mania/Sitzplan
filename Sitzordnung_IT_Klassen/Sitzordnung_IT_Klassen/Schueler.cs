@@ -18,10 +18,10 @@ namespace Sitzordnung_IT_Klassen
         //Schülerobjekt
         public Schueler(String name, String vorname, String beruf, String betrieb, String geschlecht)
         {
-            this.Name = name;
-            this.Vorname = vorname;
-            this.Beruf = beruf;
-            this.Betrieb = betrieb;
+            this.Name       = name;
+            this.Vorname    = vorname;
+            this.Beruf      = beruf;
+            this.Betrieb    = betrieb;
             this.Geschlecht = geschlecht;
         }
         

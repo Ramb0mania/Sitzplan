@@ -73,9 +73,9 @@ namespace Sitzordnung_IT_Klassen
                     new FileInfo(dlg.FileName);
                     using (Stream s = dlg.OpenFile())
                     {
-                        TextReader reader = new StreamReader(s);
-                        string st = reader.ReadToEnd();
-                        txtPath = dlg.FileName;
+                        TextReader reader   = new StreamReader(s);
+                        string st           = reader.ReadToEnd();
+                        txtPath             = dlg.FileName;
                         Console.WriteLine(txtPath);
                     }
                 }
