@@ -56,6 +56,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Raum.cs" />
+    <Compile Include="SchließenFenster.xaml.cs">
+      <DependentUpon>SchließenFenster.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Schueler.cs" />
     <Compile Include="Tisch.cs" />
     <Compile Include="AddSchueler.xaml.cs">
@@ -75,6 +78,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="AddSchueler.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SchließenFenster.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
