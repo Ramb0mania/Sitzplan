@@ -177,7 +177,7 @@ namespace Sitzordnung_IT_Klassen
 
             besetztePlaetze.Clear();
 
-            foreach (Schueler schuelerListe in Raum.schuelerListe)
+            foreach (Schueler schueler in Raum.schuelerListe)
             {
                 platz = RandomNumber(1, maxPlaetze);
 
@@ -187,7 +187,6 @@ namespace Sitzordnung_IT_Klassen
                 }
 
                 besetztePlaetze.Add(platz);
-                
             }
         }
 

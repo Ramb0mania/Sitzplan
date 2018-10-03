@@ -16,16 +16,10 @@ namespace Sitzordnung_IT_Klassen
     {
         OpenFileDialog dlg;
         String txtPath;
-        private List<Schueler> schuelerListe;
 
         public SchuelerAnsichtFenster()
         {
             InitializeComponent();
-        }
-
-        private void ErstmalAllesSauberMachen()
-        {
-            datagrid1.Columns.Clear();
         }
 
         private List<Schueler> LadeSchuelerAusCSV(string file)
@@ -55,12 +49,22 @@ namespace Sitzordnung_IT_Klassen
                     beruf = values[2];
                     betrieb = values[3];
                     geschlecht = values[4];
-                    
+
+                    Console.WriteLine(name + " " + vorname + " " + beruf + " " + betrieb + " " + geschlecht);
                     Schueler schueler = new Schueler(name, vorname, beruf, betrieb, geschlecht);
                     Raum.schuelerListe.Add(schueler);
                 }
                 schuelerListe.ForEach(Console.WriteLine);
+                fuelleListView();
                 return Raum.schuelerListe;
+            }
+        }
+       
+        private void fuelleListView()
+        {
+            for (int i = 0; i <= Raum.schuelerListe.Count -1; i++)
+            {
+                list1.Items.Add(Raum.schuelerListe[i]);
             }
         }
 
@@ -90,6 +94,11 @@ namespace Sitzordnung_IT_Klassen
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void list1_SourceUpdated(object sender, System.Windows.Data.DataTransferEventArgs e)
+        {
+
         }
     }
 }

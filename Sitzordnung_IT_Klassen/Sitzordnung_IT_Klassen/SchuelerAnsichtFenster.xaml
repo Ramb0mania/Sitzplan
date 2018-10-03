@@ -6,7 +6,17 @@
         mc:Ignorable="d"
         Title="SchuelerAnsichtFenster" Height="450" Width="800">
     <Grid Background="#FF515050">
-        <DataGrid Name="datagrid1" HorizontalAlignment="Left" Height="316" Margin="62,49,0,0" VerticalAlignment="Top" Width="608"/>
+        <ListView Margin="28,34,205,35" Name="list1" Background="Azure">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Path=schuelerListe.Name}"></GridViewColumn>
+                    <GridViewColumn Header="Vorname" DisplayMemberBinding="{Binding Path=schuelerListe.Vorname}"></GridViewColumn>
+                    <GridViewColumn Header="Beruf" DisplayMemberBinding="{Binding Path=schuelerListe.Beruf}"></GridViewColumn>
+                    <GridViewColumn Header="Betrieb" DisplayMemberBinding="{Binding Path=schuelerListe.Betrieb}"></GridViewColumn>
+                    <GridViewColumn Header="Geschlecht" DisplayMemberBinding="{Binding Path=schuelerListe.Geschlecht}"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
         <Button Content="Öffnen" HorizontalAlignment="Left" Margin="687,78,0,0" VerticalAlignment="Top" Width="75" Click="Click_btn_oeffne"/>
         <Button Content="Speichern" HorizontalAlignment="Left" Margin="687,121,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         <Button Content="Zurück" HorizontalAlignment="Left" Margin="687,162,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
