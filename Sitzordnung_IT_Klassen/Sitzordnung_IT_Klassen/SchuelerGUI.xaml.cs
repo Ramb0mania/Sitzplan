@@ -118,9 +118,9 @@ namespace Sitzordnung_IT_Klassen
                 BrushConverter converter = new BrushConverter();
                 if (converter.IsValid(dataString))
                 {
-                    // Set Effects to notify the drag source what effect
-                    // the drag-and-drop operation will have. These values are 
-                    // used by the drag source's GiveFeedback event handler.
+                    // Effekte setzen um der Drag source zu sagen welchen Effekt
+                    // die Drag & Drop Operation haben wird. Diese Werte werden 
+                    // vom GiveFeedback-Eventhandler der Drag source genutzt.
                     // (Copy if CTRL is pressed; otherwise, move.)
                     if (e.KeyStates.HasFlag(DragDropKeyStates.ControlKey))
                     {
