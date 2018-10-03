@@ -1,22 +1,23 @@
-﻿<Window x:Class="Projekt_Sitzordnung.MainWindow"
+﻿<Window x:Class="Sitzordnung_IT_Klassen.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Projekt_Sitzordnung"
+        xmlns:local="clr-namespace:Sitzordnung_IT_Klassen"
         mc:Ignorable="d"
         Title="Sitzplanordnung" Height="569.197" Width="800">
     <Grid Margin="0,0,0,-20">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        
+
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="129" Margin="-1,0,0,0" VerticalAlignment="Top" Width="228"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="106" Margin="-1,0,0,0" VerticalAlignment="Top" Width="228"/>
         <Button Name="Button_add" Content="Add Schüler" HorizontalAlignment="Left" Margin="116,10,0,0" VerticalAlignment="Top" Width="89" RenderTransformOrigin="1.722,0.351" Click="Button_add_Click"/>
         <Button Name="Button_import" Content="Import Schüler" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="89" Click="Button_import_Click"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="106" Margin="567,0,-3,0" VerticalAlignment="Top" Width="228">
-            <Button Content="Schließen" RenderTransformOrigin="-0.77,2.038" Margin="110,75,21,9" Click="oeffneSchließFenster"/>
+        <Button Name="Button_content" Content="Generiere Raum" HorizontalAlignment="Left" Margin="10,73,0,0" VerticalAlignment="Top" Width="195" Click="Button_Click" />
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="129" Margin="567,0,-3,0" VerticalAlignment="Top" Width="228">
+            <Button Content="Schließen" RenderTransformOrigin="-0.77,2.038" Margin="109,35,21,68" Click="oeffneSchließFenster"/>
         </Border>
         <Button Content="Schließen" RenderTransformOrigin="-0.77,2.038" Margin="583,42,120,459.5" Click="Button_Click_2"/>
         <Button Name="Button_edit"  Content="Edit Schüler" HorizontalAlignment="Left" Margin="583,10,0,0" VerticalAlignment="Top" Width="89"/>
@@ -80,7 +81,7 @@
                 </TransformGroup>
             </Border.RenderTransform>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="313,204,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="318,204,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
             <Border.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -90,7 +91,7 @@
                 </TransformGroup>
             </Border.RenderTransform>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="363,204,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="368,204,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
             <Border.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -100,7 +101,7 @@
                 </TransformGroup>
             </Border.RenderTransform>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="341,279,0,0" VerticalAlignment="Top" Width="94" RenderTransformOrigin="0.999,0.31">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="346,279,0,0" VerticalAlignment="Top" Width="94" RenderTransformOrigin="0.999,0.31">
             <Border.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -170,61 +171,165 @@
                 </TransformGroup>
             </Border.RenderTransform>
         </Border>
-        <Button Content="Zeige Liste" HorizontalAlignment="Left" Margin="686,10,0,0" VerticalAlignment="Top" Width="96" Click="Button_Click_1"/>
+        <Button Content="Zeige Liste" HorizontalAlignment="Left" Margin="677,10,0,0" VerticalAlignment="Top" Width="96" Click="Button_Click_1"/>
         <Button Content="Verteile Schüler" HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top" Width="195"/>
-        
-        <StackPanel
-            Background="DarkGray"
-            AllowDrop="True"
-            DragOver="panel_DragOver"
-            Drop="panel_Drop" Margin="75,296,682,230"/>
-        <StackPanel
-            Background="DarkGray"
-            AllowDrop="True"
-            DragOver="panel_DragOver"
-            Drop="panel_Drop" Margin="128,296,628,230"/>
-        <StackPanel
-            Background="DarkGray"
-            AllowDrop="True"
-            DragOver="panel_DragOver"
-            Drop="panel_Drop" Margin="343,326,414,200"/>
-        <StackPanel
-            Background="DarkGray"
-            AllowDrop="True"
-            DragOver="panel_DragOver"
-            Drop="panel_Drop" Margin="397,326,360,200"/>
-        <StackPanel
-            Background="DarkGray"
-            AllowDrop="True"
-            DragOver="panel_DragOver"
-            Drop="panel_Drop" Margin="638,296,119,230"/>
-        <StackPanel
-            Background="DarkGray"
-            AllowDrop="True"
-            DragOver="panel_DragOver"
-            Drop="panel_Drop" Margin="694,296,63,230"/>
-        <StackPanel
-            Background="DarkGray"
-            AllowDrop="True"
-            DragOver="panel_DragOver"
-            Drop="panel_Drop" Margin="74,502,683,24"/>
-        <StackPanel
-            Background="DarkGray"
-            AllowDrop="True"
-            DragOver="panel_DragOver"
-            Drop="panel_Drop" Margin="128,502,628,24"/>
-        <StackPanel
-            Background="DarkGray"
-            AllowDrop="True"
-            DragOver="panel_DragOver"
-            Drop="panel_Drop" Margin="638,502,119,24"/>
-        <StackPanel
-            Background="DarkGray"
-            AllowDrop="True"
-            DragOver="panel_DragOver"
-            Drop="panel_Drop" Margin="694,502,63,24"/>
-        <DataGrid HorizontalAlignment="Left" Height="100" Margin="241,10,0,0" VerticalAlignment="Top" Width="100"/>
         <!-- Bedingung: Raum muss generiert sein und eine Datei muss angebunden sein -->
-
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" Margin="66,296,681,218"/>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" Margin="128,296,619,218"/>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" Margin="338,326,409,188"/>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" Margin="402,326,345,188"/>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" Margin="628,296,118,218"/>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver= "Panel_DragOver"
+            Drop="Panel_Drop" Margin="694,296,53,218"/>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" Margin="64,490,683,24"/>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" Margin="128,490,619,24"/>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" Margin="628,490,119,24"/>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" Margin="694,490,53,24"/>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" Margin="24,150,723,364"/>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" Margin="24,207,723,307"/>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" Margin="24,356,723,158"/>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" Margin="24,416,723,98"/>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" Margin="297,180,450,334"/>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" Margin="297,238,450,276"/>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" Margin="588,150,159,364"/>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" Margin="588,207,159,307"/>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" Margin="588,356,159,158"/>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" Margin="588,416,159,98"/>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" Margin="171,150,576,364"/>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" Margin="170,207,576,307"/>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" Margin="171,356,576,158"/>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" Margin="171,416,576,98"/>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" Margin="444,180,303,334"/>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" Margin="444,238,303,276"/>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" Margin="734,150,13,364"/>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" Margin="734,207,13,307"/>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" Margin="734,356,13,158"/>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" Margin="734,416,13,98"/>
+        <StackPanel
+            Background="DarkGray"
+            AllowDrop="True"
+            DragOver="Panel_DragOver"
+            Drop="Panel_Drop" Margin="241,84,506,430">
+            <local:SchuelerGUI Margin="2" />
+        </StackPanel>
     </Grid>
 </Window>
