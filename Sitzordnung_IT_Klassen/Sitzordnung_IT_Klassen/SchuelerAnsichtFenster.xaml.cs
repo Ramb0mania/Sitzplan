@@ -59,7 +59,7 @@ namespace Sitzordnung_IT_Klassen
                     Schueler schueler = new Schueler(name, vorname, beruf, betrieb, geschlecht);
                     Raum.schuelerListe.Add(schueler);
                 }
-
+                schuelerListe.ForEach(Console.WriteLine);
                 return Raum.schuelerListe;
             }
         }

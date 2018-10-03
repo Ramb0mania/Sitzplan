@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Sitzordnung_IT_Klassen"
         mc:Ignorable="d"
         Title="Sitzplanordnung" Height="957.197" Width="1758.2">
-    <Grid Margin="0,134,0,-20">
+    <Grid Margin="0,134,0,-2" Height="794" VerticalAlignment="Top">
         <Grid.RowDefinitions>
             <RowDefinition Height="78*"/>
             <RowDefinition Height="77*"/>

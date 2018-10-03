@@ -181,7 +181,7 @@ namespace Sitzordnung_IT_Klassen
             {
                 Funktion.RandomNumber(1, maxPlaetze);
             }
-            */
+            
 
         }
 
