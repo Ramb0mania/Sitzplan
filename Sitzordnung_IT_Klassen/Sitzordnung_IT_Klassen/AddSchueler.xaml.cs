@@ -42,7 +42,6 @@ namespace Sitzordnung_IT_Klassen
             Console.WriteLine(betrieb);
             Console.WriteLine(geschlecht);
             this.Close();
-
         }
     }
 }
