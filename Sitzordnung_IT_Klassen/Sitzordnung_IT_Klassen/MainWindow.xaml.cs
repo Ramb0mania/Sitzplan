@@ -187,6 +187,7 @@ namespace Sitzordnung_IT_Klassen
                 }
 
                 besetztePlaetze.Add(platz);
+                schueler.SitzplatzSet(platz);
             }
         }
 
