@@ -30,25 +30,6 @@ namespace Sitzordnung_IT_Klassen
         {
             InitializeComponent();
         }
-        
-        private void GenerateRadioButtons(int Anzahl)
-        {
-            for (int x = 0; x < Anzahl; x++)
-            {
-
-                for (int i = 0; i < 6; i++)
-                {
-                    RadioButton rb = new RadioButton() { Content = "Radio button " + i, IsChecked = i == 0 };
-                    rb.Checked += (sender, args) =>
-                    {
-                        Console.WriteLine("Pressed " + (sender as RadioButton).Tag);
-                    };
-                    rb.Unchecked += (sender, args) => { /* Do stuff */ };
-                    rb.Tag = i;
-                }
-            }
-        }
-
         private void Button_import_Click(object sender, RoutedEventArgs e)
         {
             dlg = new OpenFileDialog();

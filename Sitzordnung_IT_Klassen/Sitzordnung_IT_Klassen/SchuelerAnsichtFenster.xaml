@@ -4,21 +4,22 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="SchuelerAnsichtFenster" Height="450" Width="800">
+        Title="SchuelerAnsichtFenster" Height="450" Width="641.642">
     <Grid Background="#FF515050">
-        <ListView Margin="28,34,205,35" Name="list1" Background="Azure">
+        
+        <ListView Margin="10,10,121,59" Name="list1" Background="Azure" ItemsSource="{Binding Path=Schueler}">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Path=schuelerListe.Name}"></GridViewColumn>
-                    <GridViewColumn Header="Vorname" DisplayMemberBinding="{Binding Path=schuelerListe.Vorname}"></GridViewColumn>
-                    <GridViewColumn Header="Beruf" DisplayMemberBinding="{Binding Path=schuelerListe.Beruf}"></GridViewColumn>
-                    <GridViewColumn Header="Betrieb" DisplayMemberBinding="{Binding Path=schuelerListe.Betrieb}"></GridViewColumn>
-                    <GridViewColumn Header="Geschlecht" DisplayMemberBinding="{Binding Path=schuelerListe.Geschlecht}"></GridViewColumn>
+                    <GridViewColumn Header="Name" Width="75" DisplayMemberBinding="{Binding Name}"></GridViewColumn>
+                    <GridViewColumn Header="Vorname" Width="75"  DisplayMemberBinding="{Binding Vorname}"></GridViewColumn>
+                    <GridViewColumn Header="Beruf" Width="135" DisplayMemberBinding="{Binding Beruf}"></GridViewColumn>
+                    <GridViewColumn Header="Betrieb" Width="100" DisplayMemberBinding="{Binding Betrieb}"></GridViewColumn>
+                    <GridViewColumn Header="Geschlecht" Width="75" DisplayMemberBinding="{Binding Geschlecht}"></GridViewColumn>
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button Content="Öffnen" HorizontalAlignment="Left" Margin="687,78,0,0" VerticalAlignment="Top" Width="75" Click="Click_btn_oeffne"/>
-        <Button Content="Speichern" HorizontalAlignment="Left" Margin="687,121,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        <Button Content="Zurück" HorizontalAlignment="Left" Margin="687,162,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Button Content="Öffnen" HorizontalAlignment="Left" Margin="539,74,0,0" VerticalAlignment="Top" Width="75" Click="Click_btn_oeffne"/>
+        <Button Content="Speichern" HorizontalAlignment="Left" Margin="539,117,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Zurück" HorizontalAlignment="Left" Margin="539,153,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
     </Grid>
 </Window>

@@ -54,17 +54,18 @@ namespace Sitzordnung_IT_Klassen
                     Schueler schueler = new Schueler(name, vorname, beruf, betrieb, geschlecht);
                     Raum.schuelerListe.Add(schueler);
                 }
-                schuelerListe.ForEach(Console.WriteLine);
-                FuelleListView();
+                Console.WriteLine("---------------------");
+                Raum.schuelerListe.ForEach(Console.WriteLine);
+                list1.ItemsSource = Raum.schuelerListe;
                 return Raum.schuelerListe;
             }
         }
        
         private void FuelleListView()
         {
-            for (int i = 0; i <= Raum.schuelerListe.Count -1; i++)
+            foreach (Schueler schueler in Raum.schuelerListe)
             {
-                list1.Items.Add(Raum.schuelerListe[i]);
+               
             }
         }
 
