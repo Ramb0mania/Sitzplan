@@ -17,36 +17,13 @@ namespace Sitzordnung_IT_Klassen
             this.Betrieb = betrieb;
             this.Geschlecht = geschlecht;
         }
+        
+        //Hier wurde Wasserzeichen-Methode gelöscht
 
-        ~Schueler()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public string Name { get { return Name; } set { Name = value; } }
-
-        public string Vorname
-        {
-            get { return Vorname; }
-            set { Vorname = value; }
-        }
-
-        public string Beruf
-        {
-            get { return Beruf; }
-            set { Beruf = value; }
-        }
-
-        public string Betrieb
-        {
-            get { return Betrieb; }
-            set { Betrieb = value; }
-        }
-
-        public string Geschlecht
-        {
-            get { return Geschlecht; }
-            set { Geschlecht = value; }
-        }
+        private string Name { get; set; }
+        private string Vorname { get; set; }
+        private string Beruf { get; set; }
+        private string Betrieb { get; set; }
+        private string Geschlecht { get; set; }
     }
 }

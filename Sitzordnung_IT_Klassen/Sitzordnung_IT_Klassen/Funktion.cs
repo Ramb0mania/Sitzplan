@@ -26,9 +26,6 @@ namespace Sitzordnung_IT_Klassen
                 {
                      
                 }
-
-
-
             }
             else
             {
