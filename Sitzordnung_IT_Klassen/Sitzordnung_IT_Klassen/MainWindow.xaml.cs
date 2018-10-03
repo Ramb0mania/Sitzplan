@@ -91,5 +91,11 @@ namespace Projekt_Sitzordnung
             w2.Show();
 
         }
+
+        private void oeffneSchließFenster(object sender, RoutedEventArgs e)
+        {
+            SchließenFenster schließenFenster = new SchließenFenster();
+            schließenFenster.Show();
+        }
     }
 }

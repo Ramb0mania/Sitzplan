@@ -17,14 +17,32 @@ namespace Sitzordnung_IT_Klassen
     /// <summary>
     /// Interaktionslogik für Window2.xaml
     /// </summary>
-    public partial class Window2 : Window
+    public partial class AddSchueler : Window
     {
-        public Window2()
+        public AddSchueler()
         {
         }
         private void Button_add_Click(object sender, RoutedEventArgs e)
         {
-            string name = Box_
+            string geschlecht;
+            string name = Box_Name.Text;
+            string vorname = Box_Vorname.Text;
+            string beruf = cBox_Beruf.Text;
+            string betrieb = Box_Betrieb.Text;
+            if (Men.IsChecked == true)
+            {
+                geschlecht = "Männlich";
+            } else
+            {
+                geschlecht = "Weiblich";
+            }
+            Console.WriteLine(name);
+            Console.WriteLine(vorname);
+            Console.WriteLine(beruf);
+            Console.WriteLine(betrieb);
+            Console.WriteLine(geschlecht);
+            this.Close();
         }
     }
 }
+ 

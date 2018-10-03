@@ -19,9 +19,9 @@
             <TextBlock TextWrapping="Wrap" Text="Systemintegration"/>
             <TextBlock TextWrapping="Wrap" Text="Systemelektroniker"/>
         </ComboBox>
-        <StackPanel HorizontalAlignment="Left" Height="35" Margin="168,166,-88,0" VerticalAlignment="Top" Width="262" RenderTransformOrigin="0.73,0.52">
-            <RadioButton Content="Männlich"/>
-            <RadioButton Content="Weiblich" VerticalAlignment="Top" Margin="0,0,175,0"/>
+        <StackPanel Name="Panel_Radio" HorizontalAlignment="Left" Height="35" Margin="168,166,-88,0" VerticalAlignment="Top" Width="262" RenderTransformOrigin="0.73,0.52">
+            <RadioButton Name="Men" Content="Männlich"/>
+            <RadioButton Name="Woman" Content="Weiblich" VerticalAlignment="Top" Margin="0,0,175,0"/>
         </StackPanel>
         <Label Content="Geschlecht:" HorizontalAlignment="Left" Margin="49,160,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.109,0.437"/>
         <Button Content="Einfügen" HorizontalAlignment="Left" Margin="49,201,0,0" VerticalAlignment="Top" Width="75" Click="Button_add_Click"/>
