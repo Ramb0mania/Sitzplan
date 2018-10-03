@@ -223,6 +223,7 @@
             AllowDrop="True"
             DragOver="panel_DragOver"
             Drop="panel_Drop" Margin="694,502,63,24"/>
+        <DataGrid HorizontalAlignment="Left" Height="100" Margin="241,10,0,0" VerticalAlignment="Top" Width="100"/>
         <!-- Bedingung: Raum muss generiert sein und eine Datei muss angebunden sein -->
 
     </Grid>
