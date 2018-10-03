@@ -172,7 +172,7 @@ namespace Sitzordnung_IT_Klassen
         private void Verteile_Schueler(object sender, RoutedEventArgs e)
         {
             List<int> besetztePlaetze = new List<int>();
-            int maxPlaetze = 30;
+            int maxPlaetze = 31;
             int platz;
 
             besetztePlaetze.Clear();
@@ -293,6 +293,11 @@ namespace Sitzordnung_IT_Klassen
         {
             Random random = new Random();
             return random.Next(min, max);
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
