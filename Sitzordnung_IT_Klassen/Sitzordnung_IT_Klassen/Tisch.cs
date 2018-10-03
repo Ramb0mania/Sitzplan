@@ -21,20 +21,20 @@ namespace Sitzordnung_IT_Klassen
 
         public int AnzPlaetze
         {
-            get { return AnzPlaetze; }
-            set { AnzPlaetze = value; }
+            get => AnzPlaetze;
+            set => AnzPlaetze = value;
         }
 
         public int Tischnr
         {
-            get { return Tischnr; }
-            set { Tischnr = value; }
+            get => Tischnr;
+            set => Tischnr = value;
         }
 
-       /* public Raum Raum
-        {
-            get { return Raum; }
-            set { Raum = value; }
-        } */
+        /* public Raum Raum
+         {
+             get { return Raum; }
+             set { Raum = value; }
+         } */
     }
 }

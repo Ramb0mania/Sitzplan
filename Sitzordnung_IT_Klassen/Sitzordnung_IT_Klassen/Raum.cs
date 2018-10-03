@@ -27,14 +27,14 @@ namespace Sitzordnung_IT_Klassen
 
         public int AnzTische
         {
-            get { return AnzTische; }
-            set { AnzTische = value; }
+            get => AnzTische;
+            set => AnzTische = value;
         }
 
         public int Name
         {
-            get { return Name; }
-            set { Name = value; }
+            get => Name;
+            set => Name = value;
         }
         public void AddToTisch(Schueler schueler, int Tischnr)
         {

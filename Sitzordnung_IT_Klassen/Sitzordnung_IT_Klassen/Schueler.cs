@@ -23,11 +23,7 @@ namespace Sitzordnung_IT_Klassen
             throw new System.NotImplementedException();
         }
 
-        public string Name
-        {
-            get { return Name; }
-            set { Name = value; }
-        }
+        public string Name { get { return Name; } set { Name = value; } }
 
         public string Vorname
         {
