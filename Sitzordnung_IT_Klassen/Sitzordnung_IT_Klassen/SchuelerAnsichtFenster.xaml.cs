@@ -27,9 +27,8 @@ namespace Sitzordnung_IT_Klassen
             datagrid1.Columns.Clear();
         }
 
-        private List<Schueler> ladeSchuelerAusCSV(string file)
+        private List<Schueler> LadeSchuelerAusCSV(string file)
         {
-            List<Schueler> schuelerListe = new List<Schueler>();
             string name;
             string vorname;
             string beruf;
@@ -56,10 +55,10 @@ namespace Sitzordnung_IT_Klassen
                     geschlecht = values[4];
                     
                     Schueler schueler = new Schueler(name, vorname, beruf, betrieb, geschlecht);
-                    schuelerListe.Add(schueler);
+                    Raum.schuelerListe.Add(schueler);
                 }
 
-                return schuelerListe;
+                return Raum.schuelerListe;
             }
         }
 
@@ -79,7 +78,7 @@ namespace Sitzordnung_IT_Klassen
                         Console.WriteLine(txtPath);
                     }
                 }
-            ladeSchuelerAusCSV(txtPath);
+            LadeSchuelerAusCSV(txtPath);
             }
 
         private void Button_Click(object sender, RoutedEventArgs e)

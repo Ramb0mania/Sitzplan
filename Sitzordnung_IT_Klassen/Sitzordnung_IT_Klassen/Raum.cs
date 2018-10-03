@@ -9,6 +9,8 @@ namespace Sitzordnung_IT_Klassen
     class Raum
     {
         //Raumobjekt für GUI
+        public static List<Schueler> schuelerListe = new List<Schueler>();
+
         List<Schueler> t1 = new List<Schueler>();
         List<Schueler> t2 = new List<Schueler>();
         List<Schueler> t3 = new List<Schueler>();
