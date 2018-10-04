@@ -37,7 +37,8 @@ namespace Sitzordnung_IT_Klassen
             {
                 geschlecht = "weiblich";
             }
-            Raum.AddSchueler(new Schueler(name, vorname, beruf, betrieb, geschlecht));
+            Schueler schueler = new Schueler(name, vorname, beruf, betrieb, geschlecht);
+            Raum.schuelerListe.Add(schueler);
             this.Close();
         }
     }

@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sitzordnung_IT_Klassen"
         mc:Ignorable="d"
-        Title="SchuelerAnsichtFenster" Height="450" Width="640.642">
+        Title="SchuelerAnsichtFenster" Height="834.5" Width="640.642">
     <Grid Background="#FF515050" Margin="0,0,2,0">
-        <ListView Margin="10,10,131,25" Name="list1" Background="Azure" ItemsSource="{Binding Path=Schueler}">
+        <ListView Margin="10,10,0,0" Name="list1" Background="Azure" ItemsSource="{Binding Path=Schueler}" HorizontalAlignment="Left" VerticalAlignment="Top" Height="784">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Name" Width="75" DisplayMemberBinding="{Binding Name}"></GridViewColumn>
@@ -18,10 +18,10 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button Content="CSV Importieren" HorizontalAlignment="Left" Margin="527,90,0,0" VerticalAlignment="Top" Width="97" Click="Click_btn_oeffne"/>
-        <Button Content="CSV speichern" HorizontalAlignment="Left" Margin="527,117,0,0" VerticalAlignment="Top" Width="97" Click="Click_btn_speicher"/>
-        <Button Content="Zurück" HorizontalAlignment="Left" Margin="527,198,0,0" VerticalAlignment="Top" Width="97" Click="Button_Click_1"/>
-        <Button x:Name="Button_add_Copy" Content="Add Schüler" Margin="527,144,0,0" RenderTransformOrigin="1.722,0.351" Click="Button_add_Click" Width="97" HorizontalAlignment="Left" VerticalAlignment="Top" Height="22"/>
-        <Button x:Name="DruckeSchuelerListe" Content="Liste Drucken" Margin="527,171,0,0" RenderTransformOrigin="1.722,0.351" Click="Button_printList_Click" Width="97" HorizontalAlignment="Left" VerticalAlignment="Top" Height="22"/>
+        <Button Content="CSV Importieren" HorizontalAlignment="Right" Margin="0,30,28,0" VerticalAlignment="Top" Width="97" Click="Click_btn_oeffne"/>
+        <Button Content="CSV speichern" HorizontalAlignment="Right" Margin="0,58,28,0" VerticalAlignment="Top" Width="97" Click="Click_btn_speicher"/>
+        <Button Content="Zurück" HorizontalAlignment="Right" Margin="0,139,28,0" VerticalAlignment="Top" Width="97" Click="Button_Click_1"/>
+        <Button x:Name="Button_add_Copy" Content="Add Schüler" Margin="0,85,28,0" RenderTransformOrigin="1.722,0.351" Click="Button_add_Click" Width="97" HorizontalAlignment="Right" VerticalAlignment="Top" Height="22"/>
+        <Button x:Name="DruckeSchuelerListe" Content="Liste Drucken" Margin="0,112,28,0" RenderTransformOrigin="1.722,0.351" Click="Button_printList_Click" Width="97" HorizontalAlignment="Right" VerticalAlignment="Top" Height="22"/>
     </Grid>
 </Window>
