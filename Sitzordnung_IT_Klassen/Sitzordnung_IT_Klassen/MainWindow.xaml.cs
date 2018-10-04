@@ -307,11 +307,6 @@ namespace Sitzordnung_IT_Klassen
             return random.Next(min, max);
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
         private void InvokePrint(object sender, RoutedEventArgs e)
         {
             PrintDialog printDialog = new PrintDialog();
@@ -323,6 +318,10 @@ namespace Sitzordnung_IT_Klassen
                 printDialog.PrintVisual(SitzPlan as Visual, description: "Mein erster Druck");
 
             }
+        }
+        private void TextBox_TextChanged(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

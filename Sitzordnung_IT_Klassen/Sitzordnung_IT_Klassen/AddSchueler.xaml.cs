@@ -20,10 +20,8 @@ namespace Sitzordnung_IT_Klassen
     /// </summary>
     public partial class AddSchueler : Window
     {
-        Raum raum = new Raum();
         public AddSchueler()
         {
-            InitializeComponent();
         }
         private void Button_add_Click(object sender, RoutedEventArgs e)
         {
