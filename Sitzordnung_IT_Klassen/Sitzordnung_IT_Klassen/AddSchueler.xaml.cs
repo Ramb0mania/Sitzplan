@@ -23,6 +23,7 @@ namespace Sitzordnung_IT_Klassen
         Raum raum = new Raum();
         public AddSchueler()
         {
+            InitializeComponent();
         }
         private void Button_add_Click(object sender, RoutedEventArgs e)
         {
