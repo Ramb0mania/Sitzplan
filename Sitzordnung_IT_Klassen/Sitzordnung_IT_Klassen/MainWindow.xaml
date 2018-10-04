@@ -67,7 +67,7 @@
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
             </Grid.ColumnDefinitions>
-            <Border BorderBrush="Black" BorderThickness="3" Margin="3,3,11,5" Grid.RowSpan="10" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="7"/>
+            <Border BorderBrush="Black" BorderThickness="3" Margin="3,3,1405,5"/>
             <Button x:Name="Button_add_Copy" Content="Add Schüler" Margin="10,95,1632,43" RenderTransformOrigin="1.722,0.351" Click="Button_add_Click"/>
             <Button x:Name="Button_edit_Copy"  Content="Edit Schüler" Margin="10,125,1632,13"/>
             <Button Content="Zeige Liste" Margin="10,40,1632,99" Click="Button_edit_Click"/>
