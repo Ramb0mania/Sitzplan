@@ -15,9 +15,9 @@
         <Label Content="Beruf:" HorizontalAlignment="Left" Margin="49,103,0,0" VerticalAlignment="Top"/>
         <Label Content="Betrieb:" HorizontalAlignment="Left" Margin="49,134,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.019,0.329"/>
         <ComboBox Name="cBox_Beruf" HorizontalAlignment="Left" Margin="168,107,0,0" VerticalAlignment="Top" Width="120">
-            <TextBlock TextWrapping="Wrap" Text="Anwendungsentwickler"/>
-            <TextBlock TextWrapping="Wrap" Text="Systemintegration"/>
-            <TextBlock TextWrapping="Wrap" Text="Systemelektroniker"/>
+            <TextBlock TextWrapping="Wrap" Text="AWE"/>
+            <TextBlock TextWrapping="Wrap" Text="SI"/>
+            <TextBlock TextWrapping="Wrap" Text="SE"/>
         </ComboBox>
         <StackPanel Name="Panel_Radio" HorizontalAlignment="Left" Height="35" Margin="168,166,-88,0" VerticalAlignment="Top" Width="262" RenderTransformOrigin="0.73,0.52">
             <RadioButton Name="Men" Content="Männlich"/>
