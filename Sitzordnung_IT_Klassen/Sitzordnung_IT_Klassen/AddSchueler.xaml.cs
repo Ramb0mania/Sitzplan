@@ -39,11 +39,6 @@ namespace Sitzordnung_IT_Klassen
             {
                 geschlecht = "weiblich";
             }
-            Console.WriteLine(name);
-            Console.WriteLine(vorname);
-            Console.WriteLine(beruf);
-            Console.WriteLine(betrieb);
-            Console.WriteLine(geschlecht);
             Raum.AddSchueler(new Schueler(name, vorname, beruf, betrieb, geschlecht));
             this.Close();
         }

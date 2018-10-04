@@ -5,6 +5,7 @@ using System.Windows.Controls;
 using System.IO;
 using System.Collections.Generic;
 using Microsoft.Win32;
+using Sitzordnung_IT_Klassen;
 
 
 namespace Sitzordnung_IT_Klassen
@@ -100,7 +101,6 @@ namespace Sitzordnung_IT_Klassen
         {
             AddSchueler w2 = new AddSchueler();
             w2.Show();
-
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
