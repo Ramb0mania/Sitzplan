@@ -73,28 +73,21 @@ namespace Sitzordnung_IT_Klassen
         }
 
         private void Click_btn_oeffne(object sender, RoutedEventArgs e)
-            {
-                dlg = new OpenFileDialog();
-
-                if (dlg.ShowDialog() == true)
-                {
-                    new FileInfo(dlg.FileName);
-                    using (Stream s = dlg.OpenFile())
-                    {
-                        TextReader reader   = new StreamReader(s);
-                        string st           = reader.ReadToEnd();
-                        txtPath             = dlg.FileName;
-                    }
-                }
-            LadeSchuelerAusCSV(txtPath);
-            }
-
-        private void Button_add_Click(object sender, RoutedEventArgs e)
         {
-            AddSchueler w2 = new AddSchueler();
-            w2.Show();
-        }
+            dlg = new OpenFileDialog();
 
+            if (dlg.ShowDialog() == true)
+            {
+                new FileInfo(dlg.FileName);
+                using (Stream s = dlg.OpenFile())
+                {
+                    TextReader reader = new StreamReader(s);
+                    string st = reader.ReadToEnd();
+                    txtPath = dlg.FileName;
+                }
+            }
+            LadeSchuelerAusCSV(txtPath);
+        }
         private void Click_btn_speicher(object sender, RoutedEventArgs e)
         {
             sfg = new SaveFileDialog();
