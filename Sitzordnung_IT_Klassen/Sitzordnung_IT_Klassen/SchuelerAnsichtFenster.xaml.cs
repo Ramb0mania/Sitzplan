@@ -37,7 +37,6 @@ namespace Sitzordnung_IT_Klassen
 
         private List<Schueler> LadeSchuelerAusCSV(string file)
         {
-            List<Schueler> schuelerListe = new List<Schueler>();
             string name;
             string vorname;
             string beruf;
@@ -85,7 +84,6 @@ namespace Sitzordnung_IT_Klassen
                         TextReader reader   = new StreamReader(s);
                         string st           = reader.ReadToEnd();
                         txtPath             = dlg.FileName;
-                        Console.WriteLine(txtPath);
                     }
                 }
             LadeSchuelerAusCSV(txtPath);
@@ -122,7 +120,6 @@ namespace Sitzordnung_IT_Klassen
             if (printDialog.ShowDialog() == true)
 
             {
-
                 printDialog.PrintVisual(list1, description: "Schülerliste");
 
             }
