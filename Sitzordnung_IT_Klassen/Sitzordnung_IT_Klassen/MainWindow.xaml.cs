@@ -280,5 +280,18 @@ namespace Sitzordnung_IT_Klassen
         {
 
         }
+
+        private void InvokePrint(object sender, RoutedEventArgs e)
+        {
+            PrintDialog printDialog = new PrintDialog();
+
+            if (printDialog.ShowDialog() == true)
+
+            {
+
+                printDialog.PrintVisual(SitzPlan as Visual, description: "Mein erster Druck");
+
+            }
+        }
     }
 }
