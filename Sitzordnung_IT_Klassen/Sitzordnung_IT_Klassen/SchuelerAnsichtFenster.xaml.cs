@@ -16,6 +16,7 @@ namespace Sitzordnung_IT_Klassen
     {
         OpenFileDialog dlg;
         String txtPath;
+        static List<Schueler> schuelerListe;
 
         public SchuelerAnsichtFenster()
         {
@@ -24,7 +25,7 @@ namespace Sitzordnung_IT_Klassen
 
         private List<Schueler> LadeSchuelerAusCSV(string file)
         {
-            List<Schueler> schuelerListe = new List<Schueler>();
+            schuelerListe = new List<Schueler>();
             string name;
             string vorname;
             string beruf;
@@ -100,6 +101,10 @@ namespace Sitzordnung_IT_Klassen
         private void list1_SourceUpdated(object sender, System.Windows.Data.DataTransferEventArgs e)
         {
 
+        }
+        public static void AddSchueler(Schueler schueler)
+        {
+            schuelerListe.Add(schueler);
         }
     }
 }
