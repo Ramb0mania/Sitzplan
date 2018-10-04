@@ -27,10 +27,10 @@ namespace Sitzordnung_IT_Klassen
         private void Button_add_Click(object sender, RoutedEventArgs e)
         {
             string geschlecht;
-            string name = Box_Name.Text;
-            string vorname = Box_Vorname.Text;
-            string beruf = cBox_Beruf.Text;
-            string betrieb = Box_Betrieb.Text;
+            string name =       Box_Name.Text;
+            string vorname =    Box_Vorname.Text;
+            string beruf =      cBox_Beruf.Text;
+            string betrieb =    Box_Betrieb.Text;
             if (Men.IsChecked == true)
             {
                 geschlecht = "maennlich";
@@ -38,11 +38,6 @@ namespace Sitzordnung_IT_Klassen
             {
                 geschlecht = "weiblich";
             }
-            Console.WriteLine(name);
-            Console.WriteLine(vorname);
-            Console.WriteLine(beruf);
-            Console.WriteLine(betrieb);
-            Console.WriteLine(geschlecht);
             Raum.AddSchueler(new Schueler(name, vorname, beruf, betrieb, geschlecht));
             this.Close();
         }
