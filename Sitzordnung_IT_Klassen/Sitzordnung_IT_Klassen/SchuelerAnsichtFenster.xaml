@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sitzordnung_IT_Klassen"
         mc:Ignorable="d"
-        Title="SchuelerAnsichtFenster" Height="450" Width="641.642">
-    <Grid Background="#FF515050">
-        <ListView Margin="10,10,121,59" Name="list1" Background="Azure" ItemsSource="{Binding Path=Schueler}">
+        Title="SchuelerAnsichtFenster" Height="450" Width="640.642">
+    <Grid Background="#FF515050" Margin="0,0,2,0">
+        <ListView Margin="10,10,131,25" Name="list1" Background="Azure" ItemsSource="{Binding Path=Schueler}">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Name" Width="75" DisplayMemberBinding="{Binding Name}"></GridViewColumn>
