@@ -25,12 +25,6 @@ namespace Sitzordnung_IT_Klassen
             t4 = new List<Schueler>();
             t5 = new List<Schueler>();
         }
-
-        ~Raum()
-        {
-            throw new System.NotImplementedException();
-        }
-
         public int AnzTische
         {
             get => AnzTische;
