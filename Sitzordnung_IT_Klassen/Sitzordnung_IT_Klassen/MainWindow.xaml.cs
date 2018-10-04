@@ -144,17 +144,49 @@ namespace Sitzordnung_IT_Klassen
 
         private void Verteile_Schueler(object sender, RoutedEventArgs e)
         {
-            if(Raum.schuelerListe.Count()== 0)
-            {
-                MessageBox.Show("Keine Schüler vorhanden! Bitte eine Schülerliste importieren, bevor Sie Schüler verteilen.");
-            }
-            else { 
-
             List<int> besetztePlaetze = new List<int>();
             int maxPlaetze = 31;
             int platz;
 
-            besetztePlaetze.Clear();
+            if (Raum.schuelerListe.Count() == 0)
+            {
+                MessageBox.Show("Keine Schüler vorhanden! Bitte eine Schülerliste importieren, bevor Sie Schüler verteilen.");
+            }
+            else
+            {
+                //Plätze leeren
+                Platz1.Clear();
+                Platz2.Clear();
+                Platz3.Clear();
+                Platz4.Clear();
+                Platz5.Clear();
+                Platz6.Clear();
+                Platz7.Clear();
+                Platz8.Clear();
+                Platz9.Clear();
+                Platz10.Clear();
+                Platz11.Clear();
+                Platz12.Clear();
+                Platz13.Clear();
+                Platz14.Clear();
+                Platz15.Clear();
+                Platz16.Clear();
+                Platz17.Clear();
+                Platz18.Clear();
+                Platz19.Clear();
+                Platz20.Clear();
+                Platz21.Clear();
+                Platz22.Clear();
+                Platz23.Clear();
+                Platz24.Clear();
+                Platz25.Clear();
+                Platz26.Clear();
+                Platz27.Clear();
+                Platz28.Clear();
+                Platz29.Clear();
+                Platz30.Clear();
+
+                besetztePlaetze.Clear();
 
                 foreach (Schueler schueler in Raum.schuelerListe)
                 {
@@ -171,97 +203,97 @@ namespace Sitzordnung_IT_Klassen
                     switch (platz)
                     {
                         case 1:
-                            Platz1.Text = schueler.GetName();
+                            Platz1.Text = schueler.GetName() + " " + schueler.GetVorname() + "\r" + schueler.GetBeruf();
                             break;
                         case 2:
-                            Platz2.Text = schueler.GetName();
+                            Platz2.Text = schueler.GetName() + " " + schueler.GetVorname() + "\r" + schueler.GetBeruf();
                             break;
                         case 3:
-                            Platz3.Text = schueler.GetName();
+                            Platz3.Text = schueler.GetName() + " " + schueler.GetVorname() + "\r" + schueler.GetBeruf();
                             break;
                         case 4:
-                            Platz4.Text = schueler.GetName();
+                            Platz4.Text = schueler.GetName() + " " + schueler.GetVorname() + "\r" + schueler.GetBeruf();
                             break;
                         case 5:
-                            Platz5.Text = schueler.GetName();
+                            Platz5.Text = schueler.GetName() + " " + schueler.GetVorname() + "\r" + schueler.GetBeruf();
                             break;
                         case 6:
-                            Platz6.Text = schueler.GetName();
+                            Platz6.Text = schueler.GetName() + " " + schueler.GetVorname() + "\r" + schueler.GetBeruf();
                             break;
                         case 7:
-                            Platz7.Text = schueler.GetName();
+                            Platz7.Text = schueler.GetName() + " " + schueler.GetVorname() + "\r" + schueler.GetBeruf();
                             break;
                         case 8:
-                            Platz8.Text = schueler.GetName();
+                            Platz8.Text = schueler.GetName() + " " + schueler.GetVorname() + "\r" + schueler.GetBeruf();
                             break;
                         case 9:
-                            Platz9.Text = schueler.GetName();
+                            Platz9.Text = schueler.GetName() + " " + schueler.GetVorname() + "\r" + schueler.GetBeruf();
                             break;
                         case 10:
-                            Platz10.Text = schueler.GetName();
+                            Platz10.Text = schueler.GetName() + " " + schueler.GetVorname() + "\r" + schueler.GetBeruf();
                             break;
                         case 11:
-                            Platz11.Text = schueler.GetName();
+                            Platz11.Text = schueler.GetName() + " " + schueler.GetVorname() + "\r" + schueler.GetBeruf();
                             break;
                         case 12:
-                            Platz12.Text = schueler.GetName();
+                            Platz12.Text = schueler.GetName() + " " + schueler.GetVorname() + "\r" + schueler.GetBeruf();
                             break;
                         case 13:
-                            Platz13.Text = schueler.GetName();
+                            Platz13.Text = schueler.GetName() + " " + schueler.GetVorname() + "\r" + schueler.GetBeruf();
                             break;
                         case 14:
-                            Platz14.Text = schueler.GetName();
+                            Platz14.Text = schueler.GetName() + " " + schueler.GetVorname() + "\r" + schueler.GetBeruf();
                             break;
                         case 15:
-                            Platz15.Text = schueler.GetName();
+                            Platz15.Text = schueler.GetName() + " " + schueler.GetVorname() + "\r" + schueler.GetBeruf();
                             break;
                         case 16:
-                            Platz16.Text = schueler.GetName();
+                            Platz16.Text = schueler.GetName() + " " + schueler.GetVorname() + "\r" + schueler.GetBeruf();
                             break;
                         case 17:
-                            Platz17.Text = schueler.GetName();
+                            Platz17.Text = schueler.GetName() + " " + schueler.GetVorname() + "\r" + schueler.GetBeruf();
                             break;
                         case 18:
-                            Platz18.Text = schueler.GetName();
+                            Platz18.Text = schueler.GetName() + " " + schueler.GetVorname() + "\r" + schueler.GetBeruf();
                             break;
                         case 19:
-                            Platz19.Text = schueler.GetName();
+                            Platz19.Text = schueler.GetName() + " " + schueler.GetVorname() + "\r" + schueler.GetBeruf();
                             break;
                         case 20:
-                            Platz20.Text = schueler.GetName();
+                            Platz20.Text = schueler.GetName() + " " + schueler.GetVorname() + "\r" + schueler.GetBeruf();
                             break;
                         case 21:
-                            Platz21.Text = schueler.GetName();
+                            Platz21.Text = schueler.GetName() + " " + schueler.GetVorname() + "\r" + schueler.GetBeruf();
                             break;
                         case 22:
-                            Platz22.Text = schueler.GetName();
+                            Platz22.Text = schueler.GetName() + " " + schueler.GetVorname() + "\r" + schueler.GetBeruf();
                             break;
                         case 23:
-                            Platz23.Text = schueler.GetName();
+                            Platz23.Text = schueler.GetName() + " " + schueler.GetVorname() + "\r" + schueler.GetBeruf();
                             break;
                         case 24:
-                            Platz24.Text = schueler.GetName();
+                            Platz24.Text = schueler.GetName() + " " + schueler.GetVorname() + "\r" + schueler.GetBeruf();
                             break;
                         case 25:
-                            Platz25.Text = schueler.GetName();
+                            Platz25.Text = schueler.GetName() + " " + schueler.GetVorname() + "\r" + schueler.GetBeruf();
                             break;
                         case 26:
-                            Platz26.Text = schueler.GetName();
+                            Platz26.Text = schueler.GetName() + " " + schueler.GetVorname() + "\r" + schueler.GetBeruf();
                             break;
                         case 27:
-                            Platz27.Text = schueler.GetName();
+                            Platz27.Text = schueler.GetName() + " " + schueler.GetVorname() + "\r" + schueler.GetBeruf();
                             break;
                         case 28:
-                            Platz28.Text = schueler.GetName();
+                            Platz28.Text = schueler.GetName() + " " + schueler.GetVorname() + "\r" + schueler.GetBeruf();
                             break;
                         case 29:
-                            Platz29.Text = schueler.GetName();
+                            Platz29.Text = schueler.GetName() + " " + schueler.GetVorname() + "\r" + schueler.GetBeruf();
                             break;
                         case 30:
-                            Platz30.Text = schueler.GetName();
+                            Platz30.Text = schueler.GetName() + " " + schueler.GetVorname() + "\r" + schueler.GetBeruf();
                             break;
                         default:
-                            Platz31.Text = schueler.GetName();
+                            Platz31.Text = schueler.GetName() + " " + schueler.GetVorname() + "\r" + schueler.GetBeruf();
                             break;
                     }
                 }
