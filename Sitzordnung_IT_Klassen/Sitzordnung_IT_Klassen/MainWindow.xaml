@@ -70,7 +70,7 @@
             <Border BorderBrush="Black" BorderThickness="3" Margin="5,5,0,0" Height="158" Width="340" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="5,5,0,0"/>
             <Button x:Name="Button_add_Copy" Content="Add Schüler" Margin="15,70,0,0" RenderTransformOrigin="1.722,0.351" Click="Button_add_Click" Width="70" HorizontalAlignment="Left" VerticalAlignment="Top" Height="22"/>
             <Button x:Name="Button_edit_Copy"  Content="Edit Schüler" Margin="15,95,0,0" Width="70" Height="22" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-            <Button Content="CSV Import" Margin="90,15,0,0" Click="Button_edit_Click" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.601,0.076" Width="69" Height="22"/>
+            <Button Content="Liste anzeigen" Margin="90,15,0,0" Click="Button_edit_Click" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.601,0.076" Width="90" Height="22"/>
             <Button Content="Verteile Schüler" Margin="90,70,0,0" Click="Verteile_Schueler" Width="90" Height="22" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <Button Content="Schließen" Margin="15,15,20,20" Click="oeffneSchließFenster" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="22"/>
             <StackPanel
