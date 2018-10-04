@@ -16,10 +16,11 @@ namespace Sitzordnung_IT_Klassen
     {
         OpenFileDialog dlg;
         String txtPath;
+        SaveFileDialog sfg;
 
         public SchuelerAnsichtFenster()
         {
-            if (Raum.schuelerListe != null)
+            if (Raum.schuelerListe.Count() != 0)
             {
                 list1.ItemsSource = Raum.schuelerListe;
             }
@@ -65,14 +66,6 @@ namespace Sitzordnung_IT_Klassen
                 return Raum.schuelerListe;
             }
         }
-       
-        private void FuelleListView()
-        {
-            foreach (Schueler schueler in Raum.schuelerListe)
-            {
-               
-            }
-        }
 
         private void Click_btn_oeffne(object sender, RoutedEventArgs e)
             {
@@ -92,9 +85,18 @@ namespace Sitzordnung_IT_Klassen
             LadeSchuelerAusCSV(txtPath);
             }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Click_btn_speicher(object sender, RoutedEventArgs e)
         {
+            sfg = new SaveFileDialog();
 
+            if (sfg.ShowDialog() == true)
+            {
+                foreach (Schueler schueler in Raum.schuelerListe)
+                {
+                    string datensatz = schueler.Name + ";" + schueler.Vorname + ";" + schueler.Beruf + ";" + schueler.Betrieb + ";" + schueler.Geschlecht;
+                    File.AppendAllText(sfg.FileName, datensatz);
+                }
+            }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
