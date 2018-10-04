@@ -33,19 +33,18 @@ namespace Sitzordnung_IT_Klassen
             string betrieb = Box_Betrieb.Text;
             if (Men.IsChecked == true)
             {
-                geschlecht = "Männlich";
+                geschlecht = "maennlich";
             } else
             {
-                geschlecht = "Weiblich";
+                geschlecht = "weiblich";
             }
             Console.WriteLine(name);
             Console.WriteLine(vorname);
             Console.WriteLine(beruf);
             Console.WriteLine(betrieb);
             Console.WriteLine(geschlecht);
-           Raum.AddSchueler(new Schueler(name, vorname, beruf, betrieb, geschlecht));
+            Raum.AddSchueler(new Schueler(name, vorname, beruf, betrieb, geschlecht));
             this.Close();
         }
     }
 }
- 
