@@ -43,7 +43,7 @@ namespace Sitzordnung_IT_Klassen
             Console.WriteLine(beruf);
             Console.WriteLine(betrieb);
             Console.WriteLine(geschlecht);
-            SchuelerAnsichtFenster.AddSchueler(new Schueler(name, vorname, beruf, betrieb, geschlecht));
+           Raum.AddSchueler(new Schueler(name, vorname, beruf, betrieb, geschlecht));
             this.Close();
         }
     }
