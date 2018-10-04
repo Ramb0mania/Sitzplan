@@ -18,8 +18,9 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button Content="CSV Importieren" HorizontalAlignment="Left" Margin="527,77,0,0" VerticalAlignment="Top" Width="97" Click="Click_btn_oeffne"/>
-        <Button Content="CSV Speichern" HorizontalAlignment="Left" Margin="527,117,0,0" VerticalAlignment="Top" Width="97" Click="Click_btn_speicher"/>
-        <Button Content="Zurück" HorizontalAlignment="Left" Margin="527,153,0,0" VerticalAlignment="Top" Width="97" Click="Button_Click_1"/>
+        <Button Content="CSV Importieren" HorizontalAlignment="Left" Margin="527,90,0,0" VerticalAlignment="Top" Width="97" Click="Click_btn_oeffne"/>
+        <Button Content="CSV speichern" HorizontalAlignment="Left" Margin="527,117,0,0" VerticalAlignment="Top" Width="97" Click="Click_btn_speicher"/>
+        <Button Content="Zurück" HorizontalAlignment="Left" Margin="527,171,0,0" VerticalAlignment="Top" Width="97" Click="Button_Click_1"/>
+        <Button x:Name="Button_add_Copy" Content="Add Schüler" Margin="527,144,0,0" RenderTransformOrigin="1.722,0.351" Click="Button_add_Click" Width="97" HorizontalAlignment="Left" VerticalAlignment="Top" Height="22"/>
     </Grid>
 </Window>

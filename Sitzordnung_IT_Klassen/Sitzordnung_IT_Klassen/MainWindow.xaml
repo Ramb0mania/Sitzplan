@@ -19,7 +19,7 @@
         <!-- Bedingung: Raum muss generiert sein und eine Datei muss angebunden sein -->
         <!-- Bedingung: Raum muss generiert sein und eine Datei muss angebunden sein -->
         <!-- Bedingung: Raum muss generiert sein und eine Datei muss angebunden sein -->
-        <Border BorderBrush="Black" BorderThickness="3" HorizontalAlignment="Left" Height="755" Grid.RowSpan="2" VerticalAlignment="Top" Width="1755" Margin="5"/>
+        <Border BorderBrush="Black" BorderThickness="3" HorizontalAlignment="Left" Height="755" Grid.RowSpan="2" VerticalAlignment="Top" Width="1760" Margin="5,5,0,0"/>
         <!-- Bedingung: Raum muss generiert sein und eine Datei muss angebunden sein -->
         <Grid Height="Auto" Margin="0,-170,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="Auto">
             <Grid.ColumnDefinitions>
@@ -28,11 +28,9 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Border BorderBrush="Black" BorderThickness="3" Margin="5,5,0,0" Height="151" Width="340" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="5,5,0,0" Grid.ColumnSpan="2"/>
-            <Button x:Name="Button_add_Copy" Content="Add Schüler" Margin="15,70,0,0" RenderTransformOrigin="1.722,0.351" Click="Button_add_Click" Width="70" HorizontalAlignment="Left" VerticalAlignment="Top" Height="22" Grid.ColumnSpan="2"/>
-            <Button x:Name="Button_edit_Copy"  Content="Edit Schüler" Margin="15,95,0,0" Width="70" Height="22" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.ColumnSpan="2"/>
-            <Button Click="InvokePrint" Margin="90,95,0,0" Width="90" Height="22" VerticalAlignment="Top" HorizontalAlignment="Left" Content="Drucken"/>
-            <Button Content="CSV Import" Margin="90,15,0,0" Click="Button_edit_Click" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.601,0.076" Width="69" Height="22"/>
-            <Button Content="Verteile Schüler" Margin="90,70,0,0" Click="Verteile_Schueler" Width="90" Height="22" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Button Click="InvokePrint" Margin="15,123,0,0" Width="90" Height="22" VerticalAlignment="Top" HorizontalAlignment="Left" Content="Drucken"/>
+            <Button Content="Schülerliste" Margin="16,70,0,0" Click="Button_edit_Click" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.601,0.076" Width="89" Height="22"/>
+            <Button Content="Verteile Schüler" Margin="15,96,0,0" Click="Verteile_Schueler" Width="90" Height="22" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <Button Content="Schließen" Margin="15,15,0,0" Click="oeffneSchließFenster" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="22" Grid.ColumnSpan="2"/>
             <StackPanel
                 x:Name="StackVorlage"
@@ -49,7 +47,7 @@
                 </StackPanel.RenderTransform>
                 <local:SchuelerGUI Margin="2" />
             </StackPanel>
-            <Label Content="Schüler Modifizierer" HorizontalAlignment="Left" Margin="15,45,0,0" VerticalAlignment="Top" Width="126" Height="25" FontWeight="Bold" Grid.ColumnSpan="2"/>
+            <Label Content="Aktionen" HorizontalAlignment="Left" Margin="15,45,0,0" VerticalAlignment="Top" Width="126" Height="25" FontWeight="Bold" Grid.ColumnSpan="2"/>
             <Label Content="Zusatzplätze" HorizontalAlignment="Left" Margin="780.333,723,-464,-598" VerticalAlignment="Top" FontWeight="Bold" FontSize="22" Height="41" Grid.Column="1"/>
         </Grid>
         <StackPanel

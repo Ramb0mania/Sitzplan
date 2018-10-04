@@ -59,14 +59,6 @@ namespace Sitzordnung_IT_Klassen
                 sr.Close();
         }
 
-        private void Button_add_Click(object sender, RoutedEventArgs e)
-        {
-            AddSchueler w2 = new AddSchueler();
-            w2.InitializeComponent();
-            w2.Show();
-
-        }
-
         private void oeffneSchließFenster(object sender, RoutedEventArgs e)
         {
             SchließenFenster schließenFenster = new SchließenFenster();
