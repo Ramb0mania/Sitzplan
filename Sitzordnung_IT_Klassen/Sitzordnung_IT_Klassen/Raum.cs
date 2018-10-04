@@ -12,10 +12,6 @@ namespace Sitzordnung_IT_Klassen
         //Raumobjekt für GUI
         public static List<Schueler> schuelerListe = new List<Schueler>();
 
-
-        public Raum()
-        {
-        }
         public int AnzTische
         {
             get => AnzTische;

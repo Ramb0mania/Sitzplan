@@ -22,7 +22,6 @@ namespace Sitzordnung_IT_Klassen
     {
         public AddSchueler()
         {
-            InitializeComponent();
         }
         private void Button_add_Click(object sender, RoutedEventArgs e)
         {

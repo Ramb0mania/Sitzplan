@@ -25,6 +25,5 @@
         </StackPanel>
         <Label Content="Geschlecht:" HorizontalAlignment="Left" Margin="49,160,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.109,0.437"/>
         <Button Content="Einfügen" HorizontalAlignment="Left" Margin="49,201,0,0" VerticalAlignment="Top" Width="75" Click="Button_add_Click"/>
-
     </Grid>
 </Window>
