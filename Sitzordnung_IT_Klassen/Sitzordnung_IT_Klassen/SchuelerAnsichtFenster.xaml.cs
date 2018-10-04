@@ -19,6 +19,11 @@ namespace Sitzordnung_IT_Klassen
 
         public SchuelerAnsichtFenster()
         {
+            if (Raum.schuelerListe != null)
+            {
+                list1.ItemsSource = Raum.schuelerListe;
+            }
+
             InitializeComponent();
         }
 
