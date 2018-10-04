@@ -20,20 +20,10 @@ namespace Sitzordnung_IT_Klassen
 
         public SchuelerAnsichtFenster()
         {
-            if (Raum.schuelerListe.Count() != 0)
-            {
-                try
-                {
-                    list1.Items.Add("");
-                    list1.ItemsSource = Raum.schuelerListe;
-                }
-                catch (NullReferenceException)
-                {
-
-                }
-            }
-
             InitializeComponent();
+
+            if(Raum.schuelerListe.Count() !=0)
+            { list1.ItemsSource = Raum.schuelerListe; }
         }
 
         private List<Schueler> LadeSchuelerAusCSV(string file)
@@ -109,11 +99,6 @@ namespace Sitzordnung_IT_Klassen
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             this.Close();
-        }
-
-        private void list1_SourceUpdated(object sender, System.Windows.Data.DataTransferEventArgs e)
-        {
-
         }
     }
 }
