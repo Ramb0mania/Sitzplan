@@ -125,12 +125,7 @@ namespace Sitzordnung_IT_Klassen
             int maxPlaetze = 31;
             int platz;
 
-            if (Raum.schuelerListe.Count() == 0)
-            {
-                MessageBox.Show("Keine Schülerliste vorhanden! Bitte eine Schülerliste importieren, bevor Schüler verteilt werden können.");
-            }
-            else
-            {
+            CheckList();
                 //Plätze leeren
                 Platz1.Clear();
                 Platz2.Clear();
@@ -273,8 +268,6 @@ namespace Sitzordnung_IT_Klassen
                             break;
                     }
                 }
-            }
-
         }
 
         public static int RandomNumber(int min, int max)
@@ -295,6 +288,19 @@ namespace Sitzordnung_IT_Klassen
 
             }
         }
+
+        public static void CheckList()
+        {
+            if (Raum.schuelerListe.Count() == 0)
+            {
+                MessageBox.Show("Keine Schülerliste vorhanden! Bitte eine Schülerliste importieren, bevor Schüler eingefügt werden können.");
+            }
+            else
+            {
+                return;
+            }
+        }
+
         private void TextBox_TextChanged(object sender, RoutedEventArgs e)
         {
 
