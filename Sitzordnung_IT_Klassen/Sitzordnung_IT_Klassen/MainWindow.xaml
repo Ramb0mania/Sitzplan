@@ -61,7 +61,7 @@
             Drop="Panel_Drop" Margin="0,2,6,0" RenderTransformOrigin="0.741,-1.815" Grid.Column="7" Grid.Row="1" HorizontalAlignment="Right" Width="205" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3">
             <TextBox Name="Platz5" Width="Auto" Height="66"  Margin="2" Text="" FontSize="20" TextChanged="TextBox_TextChanged"/>
         </StackPanel>
-        <Grid Height="166" Margin="0,-172,0,0" VerticalAlignment="Top" Grid.ColumnSpan="28" HorizontalAlignment="Left">
+        <Grid Height="166" Margin="0,-172,0,0" VerticalAlignment="Top" Grid.ColumnSpan="28" HorizontalAlignment="Left" Width="1765">
             <Grid.RowDefinitions>
                 <RowDefinition/>
             </Grid.RowDefinitions>
