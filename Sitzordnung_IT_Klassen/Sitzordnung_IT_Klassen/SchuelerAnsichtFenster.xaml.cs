@@ -92,6 +92,7 @@ namespace Sitzordnung_IT_Klassen
         {
             sfg = new SaveFileDialog();
 
+            MainWindow.CheckList();
             if (sfg.ShowDialog() == true)
             {
                 foreach (Schueler schueler in Raum.schuelerListe)
@@ -111,6 +112,7 @@ namespace Sitzordnung_IT_Klassen
         {
             PrintDialog printDialog = new PrintDialog();
 
+            MainWindow.CheckList();
             if (printDialog.ShowDialog() == true)
 
             {
@@ -120,16 +122,10 @@ namespace Sitzordnung_IT_Klassen
         }
         private void Button_add_Click(object sender, RoutedEventArgs e)
         {
-            if (Raum.schuelerListe.Count() == 0)
-            {
-                MessageBox.Show("Keine Schülerliste vorhanden! Bitte eine Schülerliste importieren, bevor Schüler eingefügt werden können.");
-            }
-            else
-            {
-                AddSchueler w2 = new AddSchueler();
-                w2.InitializeComponent();
-                w2.Show();
-            }
+            MainWindow.CheckList();
+            AddSchueler w2 = new AddSchueler();
+            w2.InitializeComponent();
+            w2.Show();
         }
     }
 }
