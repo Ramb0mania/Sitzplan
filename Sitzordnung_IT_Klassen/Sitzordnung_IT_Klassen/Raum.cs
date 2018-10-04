@@ -27,9 +27,5 @@ namespace Sitzordnung_IT_Klassen
             get => Name;
             set => Name = value;
         }
-        public static void AddSchueler(Schueler schueler)
-        {
-            schuelerListe.Add(schueler);
-        }
     }
 }
