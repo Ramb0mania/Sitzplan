@@ -29,7 +29,7 @@ namespace Sitzordnung_IT_Klassen
         }
         public static void AddSchueler(Schueler schueler)
         {
-            schuelerListe.Add(schueler);
+            Raum.schuelerListe.Add(schueler);
         }
     }
 }

@@ -30,25 +30,6 @@ namespace Sitzordnung_IT_Klassen
         {
             InitializeComponent();
         }
-        private void Button_import_Click(object sender, RoutedEventArgs e)
-        {
-            dlg = new OpenFileDialog();
-            txtPath = new TextBox();
-           
-
-            //Open the Pop-Up Window to select the file 
-            if (dlg.ShowDialog() == true)
-            {
-                new FileInfo(dlg.FileName);
-                using (Stream s = dlg.OpenFile())
-                {
-                    TextReader reader = new StreamReader(s);
-                    string st = reader.ReadToEnd();
-                    txtPath.Text = dlg.FileName;
-                    Console.WriteLine(txtPath.Text);
-                }
-            }
-        }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {         
@@ -82,6 +63,7 @@ namespace Sitzordnung_IT_Klassen
             }
         }
 
+        
         private void Panel_Drop(object sender, DragEventArgs e)
         {
             // If an element in the panel has already handled the drop,
@@ -135,11 +117,6 @@ namespace Sitzordnung_IT_Klassen
         {
             SchuelerAnsichtFenster neueAnsicht = new SchuelerAnsichtFenster();
             neueAnsicht.Show();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
 
         private void Verteile_Schueler(object sender, RoutedEventArgs e)
