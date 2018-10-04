@@ -27,7 +27,7 @@ namespace Sitzordnung_IT_Klassen
                     list1.Items.Add("");
                     list1.ItemsSource = Raum.schuelerListe;
                 }
-                catch (NullReferenceException e)
+                catch (NullReferenceException)
                 {
 
                 }
@@ -69,7 +69,6 @@ namespace Sitzordnung_IT_Klassen
                     Raum.schuelerListe.Add(schueler);
                 }
                 Console.WriteLine("---------------------");
-                Raum.schuelerListe.ForEach(Console.WriteLine);
                 list1.ItemsSource = Raum.schuelerListe;
                 return Raum.schuelerListe;
             }
@@ -99,11 +98,11 @@ namespace Sitzordnung_IT_Klassen
 
             if (sfg.ShowDialog() == true)
             {
-                foreach (Schueler schueler in Raum.schuelerListe)
-                {
-                    string datensatz = schueler.Name + ";" + schueler.Vorname + ";" + schueler.Beruf + ";" + schueler.Betrieb + ";" + schueler.Geschlecht;
-                    File.AppendAllText(sfg.FileName, datensatz);
-                }
+                    foreach (Schueler schueler in Raum.schuelerListe)
+                    {
+                        string datensatz = schueler.Name + ";" + schueler.Vorname + ";" + schueler.Beruf + ";" + schueler.Betrieb + ";" + schueler.Geschlecht;
+                        File.AppendAllText(sfg.FileName, datensatz);
+                    }
             }
         }
 
