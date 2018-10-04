@@ -19,7 +19,7 @@ namespace Sitzordnung_IT_Klassen
 
         public SchuelerAnsichtFenster()
         {
-            if (Raum.schuelerListe != null)
+            if (Raum.schuelerListe.Count() != 0)
             {
                 list1.ItemsSource = Raum.schuelerListe;
             }
