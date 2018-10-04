@@ -89,12 +89,6 @@ namespace Sitzordnung_IT_Klassen
             LadeSchuelerAusCSV(txtPath);
             }
 
-        private void Button_add_Click(object sender, RoutedEventArgs e)
-        {
-            AddSchueler w2 = new AddSchueler();
-            w2.Show();
-        }
-
         private void Click_btn_speicher(object sender, RoutedEventArgs e)
         {
             sfg = new SaveFileDialog();
