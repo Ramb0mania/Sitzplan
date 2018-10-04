@@ -22,7 +22,15 @@ namespace Sitzordnung_IT_Klassen
         {
             if (Raum.schuelerListe.Count() != 0)
             {
-                list1.ItemsSource = Raum.schuelerListe;
+                try
+                {
+                    list1.Items.Add("");
+                    list1.ItemsSource = Raum.schuelerListe;
+                }
+                catch (NullReferenceException e)
+                {
+
+                }
             }
 
             InitializeComponent();
