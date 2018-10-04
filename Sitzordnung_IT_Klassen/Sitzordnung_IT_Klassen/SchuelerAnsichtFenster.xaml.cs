@@ -5,7 +5,15 @@ using System.Windows.Controls;
 using System.IO;
 using System.Collections.Generic;
 using Microsoft.Win32;
-using Sitzordnung_IT_Klassen;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
 
 
 namespace Sitzordnung_IT_Klassen
@@ -105,6 +113,19 @@ namespace Sitzordnung_IT_Klassen
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void Button_printList_Click(object sender, RoutedEventArgs e)
+        {
+            PrintDialog printDialog = new PrintDialog();
+
+            if (printDialog.ShowDialog() == true)
+
+            {
+
+                printDialog.PrintVisual(list1, description: "Schülerliste");
+
+            }
         }
     }
 }

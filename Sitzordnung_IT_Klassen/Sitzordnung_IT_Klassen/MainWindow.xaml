@@ -28,9 +28,9 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Border BorderBrush="Black" BorderThickness="3" Margin="5,5,0,0" Height="151" Width="340" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="5,5,0,0" Grid.ColumnSpan="2"/>
-            <Button Click="InvokePrint" Margin="15,123,0,0" Width="90" Height="22" VerticalAlignment="Top" HorizontalAlignment="Left" Content="Drucken"/>
-            <Button Content="Schülerliste" Margin="16,70,0,0" Click="Button_edit_Click" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.601,0.076" Width="89" Height="22"/>
-            <Button Content="Verteile Schüler" Margin="15,96,0,0" Click="Verteile_Schueler" Width="90" Height="22" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Button Click="InvokePrint" Margin="15,123,0,0" Width="99" Height="22" VerticalAlignment="Top" HorizontalAlignment="Left" Content="Sitzplan Drucken"/>
+            <Button Content="Schülerliste" Margin="16,70,0,0" Click="Button_edit_Click" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.601,0.076" Width="98" Height="22"/>
+            <Button Content="Verteile Schüler" Margin="15,96,0,0" Click="Verteile_Schueler" Width="99" Height="22" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <Button Content="Schließen" Margin="15,15,0,0" Click="oeffneSchließFenster" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="22" Grid.ColumnSpan="2"/>
             <StackPanel
                 x:Name="StackVorlage"
