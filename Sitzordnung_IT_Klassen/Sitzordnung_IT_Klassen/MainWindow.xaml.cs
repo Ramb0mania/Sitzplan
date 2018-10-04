@@ -150,7 +150,7 @@ namespace Sitzordnung_IT_Klassen
 
             if (Raum.schuelerListe.Count() == 0)
             {
-                MessageBox.Show("Keine Schüler vorhanden! Bitte eine Schülerliste importieren, bevor Sie Schüler verteilen.");
+                MessageBox.Show("Keine Schülerliste vorhanden! Bitte eine Schülerliste importieren, bevor Schüler verteilt werden können.");
             }
             else
             {
@@ -185,7 +185,6 @@ namespace Sitzordnung_IT_Klassen
                 Platz28.Clear();
                 Platz29.Clear();
                 Platz30.Clear();
-
                 besetztePlaetze.Clear();
 
                 foreach (Schueler schueler in Raum.schuelerListe)
