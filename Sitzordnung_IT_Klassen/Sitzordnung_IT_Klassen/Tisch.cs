@@ -14,11 +14,6 @@ namespace Sitzordnung_IT_Klassen
             throw new System.NotImplementedException();
         }
 
-        ~Tisch()
-        {
-            throw new System.NotImplementedException();
-        }
-
         public int AnzPlaetze
         {
             get => AnzPlaetze;

@@ -25,12 +25,6 @@ namespace Sitzordnung_IT_Klassen
             t4 = new List<Schueler>();
             t5 = new List<Schueler>();
         }
-
-        ~Raum()
-        {
-            throw new System.NotImplementedException();
-        }
-
         public int AnzTische
         {
             get => AnzTische;
@@ -42,26 +36,9 @@ namespace Sitzordnung_IT_Klassen
             get => Name;
             set => Name = value;
         }
-        public void AddToTisch(Schueler schueler, int Tischnr)
+        public static void AddSchueler(Schueler schueler)
         {
-            switch (Tischnr)
-            {
-                case 1:
-                    t1.Add(schueler);
-                    break;
-                case 2:
-                    t2.Add(schueler);
-                    break;
-                case 3:
-                    t3.Add(schueler);
-                    break;
-                case 4:
-                    t4.Add(schueler);
-                    break;
-                case 5:
-                    t5.Add(schueler);
-                    break;
-            }
-}
+            schuelerListe.Add(schueler);
+        }
     }
 }
