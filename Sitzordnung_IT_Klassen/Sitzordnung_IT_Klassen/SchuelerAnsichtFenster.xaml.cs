@@ -96,6 +96,14 @@ namespace Sitzordnung_IT_Klassen
             }
         }
 
+        private void Button_add_Click(object sender, RoutedEventArgs e)
+        {
+            AddSchueler w2 = new AddSchueler();
+            w2.InitializeComponent();
+            w2.Show();
+
+        }
+
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             this.Close();
