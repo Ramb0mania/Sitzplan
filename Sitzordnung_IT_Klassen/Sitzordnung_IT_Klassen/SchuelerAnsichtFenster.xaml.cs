@@ -27,7 +27,7 @@ namespace Sitzordnung_IT_Klassen
                     list1.Items.Add("");
                     list1.ItemsSource = Raum.schuelerListe;
                 }
-                catch (NullReferenceException e)
+                catch (NullReferenceException)
                 {
 
                 }
@@ -101,7 +101,7 @@ namespace Sitzordnung_IT_Klassen
             {
                 foreach (Schueler schueler in Raum.schuelerListe)
                 {
-                    string datensatz = schueler.Name + ";" + schueler.Vorname + ";" + schueler.Beruf + ";" + schueler.Betrieb + ";" + schueler.Geschlecht;
+                    string datensatz = schueler.Name + ";" + schueler.Vorname + ";" + schueler.Beruf + ";" + schueler.Betrieb + ";" + schueler.Geschlecht + "\r\n";
                     File.AppendAllText(sfg.FileName, datensatz);
                 }
             }
